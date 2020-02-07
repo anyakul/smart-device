@@ -1,0 +1,44 @@
+.contacts {
+  @include cancel;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  margin-right: 0;
+}
+
+.contacts__item {
+  padding-top: 10px;
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+}
+
+.contacts__item a {
+  color: $white-color;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.contacts__button {
+  color: $white-color;
+  font-family: "RobotoMono-bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px;
+  margin-top: -18px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+@media (max-width: 1023px) {
+  .contacts {
+    width: 10%;
+  }
+
+  .contacts__text {
+    display: none;
+  }
+
+  .contacts__button {
+    display: none;
+  }
+}

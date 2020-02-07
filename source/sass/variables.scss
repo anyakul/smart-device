@@ -1,0 +1,42 @@
+$header-bg-color: #1b2d37;
+$desktop-width: 1024px;
+$max-tablet-width: 1023px;
+$grey-color: #788891;
+$white-color: #ffffff;
+$blue-color: #00b2ff;
+
+@mixin cancel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin page-size {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}

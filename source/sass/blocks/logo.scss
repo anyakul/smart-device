@@ -1,0 +1,33 @@
+.logo {
+  @include flex-row;
+}
+
+.logo__icon {
+  margin-right: 10px;
+}
+
+.logo__text {
+  @include flex-column;
+  margin-left: 15px;
+}
+
+.logo__header {
+  font-family: "RobotoMono-bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: $white-color;
+}
+
+.logo__add {
+  font-family: "RobotoMono-Regular", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: $grey-color;
+}
+
+@media (max-width: 767px) {
+  .logo__text {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.navigation {
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.navigation__toggle {
+  background: transparent;
+  border: none;
+}
+
+@media (max-width: 1023px) {
+  .navigation {
+    margin-right: 0;
+    margin-left: 50%;
+  }
+
+  .navigation__toggle {
+    background: transparent;
+    border: none;
+  }
+}

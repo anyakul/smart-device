@@ -8,6 +8,63 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+    <!-- header -->
+    <header class="header">
+      <section class="header__wrapper">
+        <div class="header__logo">
+          <a class="header__logo-link logo">
+          <!-- <picture>-->
+            <!--<source media="(min-width: 1200px)" srcset="#">
+            <source media="(min-width: 768px)" srcset="#">-->
+            <img class="logo__icon" src="img/icon-logo.svg" width="40" height="40" alt="smart device">
+          <!--  </picture>-->
+            <div class="logo__text">
+              <span class="logo__header">Smart Device</span>
+              <span class="logo__add">умные технологии</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- navigation -->
+        <nav class="navigation navigation--closed navigation--nojs <!--(navigation--opened)-->">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img class="navigation__icon" src="img/icon-burger.svg" width="37" height="40" alt="smart device">
+          </button>
+        </nav>
+
+        <!-- info -->
+        <ul class="contacts">
+          <li class="contacts__item contacts__item--mail">
+            <a href="mailto:info@sd.ru">
+              <img class="contacts__icon" src="img/icon-mail.svg" width="15" height="10" alt="smart device">
+              <span class="contacts__text">info@sd.ru</span>
+            </a>
+          </li>
+          <li class="contacts__item contacts__item--phone">
+            <a href="tel:+74950005252">
+              <img class="contacts__icon" src="img/icon-phone.svg" width="15" height="17" alt="smart device">
+              <span class="contacts__text">+7 (495) 000 52 52</span>
+            </a>
+          </li>
+          <li class="contacts__item contacts__item--order-call">
+            <button class="contacts__button" type="button">Заказать звонок</button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- promo -->
+      <section class="header__promo promo">
+        <div class="promo__info">
+          <h1 class="promo__title">Печатные платы</h1>
+          <div class="promo__description">
+            <img class="promo__icon" src="img/icon-dash.svg" alt="smart device">
+            <p class="promo__text">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          </div>
+          <button class="promo__button promo__button--desktop" type="button">Получить бесплатную консультацию</button>
+          <button class="promo__button promo__button--mobile" type="button">Бесплатная консультация</button>
+        </div>
+      </section>
+    </header> <!-- end header --->
+  </body>
 </html>
