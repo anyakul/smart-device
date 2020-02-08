@@ -1,0 +1,112 @@
+.advantages {
+ // background-color: $light-grey;
+ @include page-size;
+}
+
+.advantages__list {
+  @include cancel;
+  padding-top: 110px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  position: relative;
+  width: 43%;
+  margin-bottom: 20px;
+  padding-top: 75px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 30px;
+
+  border: 1px solid $border-color;
+  border-left: 3px solid $blue-color;
+}
+
+.advantages__item--active {
+  color: $white-color;
+  border: none;
+  background-color: $blue-color;
+}
+
+.advantages__title {
+  font-family: "RobotoMono-bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: $blue-color;
+  margin-bottom: 15px;
+}
+
+.advantages__text {
+  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-size: 24px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.advantages__item--active .advantages__title,
+.advantages__item--active .advantages__text {
+  color: $white-color;
+  border: none;
+  background-color: $blue-color;
+}
+
+.advantages__item--contractor::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-people.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--detective::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 35px;
+  height: 30px;
+  background-image: url("../img/icon-detective.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--price::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 35px;
+  height: 30px;
+  background-image: url("../img/icon-price.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--time::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 35px;
+  height: 30px;
+  background-image: url("../img/icon-clock-active.svg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .advantages__list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__item {
+   width: 100%;
+  }
+}

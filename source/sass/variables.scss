@@ -4,11 +4,18 @@ $max-tablet-width: 1023px;
 $grey-color: #788891;
 $white-color: #ffffff;
 $blue-color: #00b2ff;
+$light-grey: #E5E5E5;
+$border-color: #ebebeb;
 
 @mixin cancel {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -25,7 +32,7 @@ $blue-color: #00b2ff;
 }
 
 @mixin page-size {
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   overflow: hidden;
 }
