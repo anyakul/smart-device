@@ -12,7 +12,7 @@
 }
 
 .logo__header {
-  font-family: "RobotoMono-bold", "Arial", sans-serif;
+  font-family: $roboto-mono-bold-font;
   font-weight: bold;
   font-size: 25px;
   line-height: 29px;
@@ -20,7 +20,7 @@
 }
 
 .logo__add {
-  font-family: "RobotoMono-Regular", "Arial", sans-serif;
+  font-family: $roboto-mono-regular-font;
   font-weight: 500;
   font-size: 12px;
   color: $grey-color;

@@ -1,5 +1,5 @@
 .promo {
-  color: white;
+  color: $white-color;
   padding-bottom: 40px;
   background-image: url("../../img/motherboard.png");
   background-repeat: no-repeat;
@@ -13,18 +13,16 @@
 }
 
 .promo__title {
-  font-family: "RobotoMono-Regular", "Arial", sans-serif;
+  font-family: $roboto-mono-regular-font;
   text-transform: uppercase;
   font-size: 50px;
 }
 
 .promo__description {
-  font-family: "PTMono-Regular", "Arial", sans-serif;
+  @include flex-row;
+  font-family: $roboto-mono-regular-font;
   font-size: 16px;
   line-height: 34px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 75%;
 }
 
@@ -40,8 +38,8 @@
 }
 
 .promo__button {
-  font-family: "PTMono-Bold", "Arial", sans-serif;
-  color: white;
+  font-family: $pt-mono-regular-font;
+  color: $white-color;
   background-color: $blue-color;
   padding: 15px 30px;
   border: none;

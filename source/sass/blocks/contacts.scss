@@ -1,15 +1,13 @@
 .contacts {
   @include cancel;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex-row;
   width: 55%;
 }
 
 .contacts__item {
   margin-right: 10px;
   padding-top: 10px;
-  font-family: "PTMono-Regular", "Arial", sans-serif;
+  font-family: $pt-mono-regular-font;
 }
 
 .contacts__item a {
@@ -20,13 +18,13 @@
 
 .contacts__button {
   color: $white-color;
-  font-family: "RobotoMono-bold", "Arial", sans-serif;
+  font-family: $roboto-mono-bold-font;
   font-size: 14px;
   line-height: 16px;
   padding: 12px;
   margin-top: -18px;
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid $white-color;
 }
 
 @media (max-width: 1023px) {
