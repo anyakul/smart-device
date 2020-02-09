@@ -1,13 +1,16 @@
 .about {
   @include page-size;
-  @include flex-row;
   margin-bottom: 50px;
+}
+
+.about__wrapper {
+  @include container;
+  @include flex-row;
 }
 
 .about__icon {
   margin-right: 30px;
   height: 280px;
-  margin-left: 50px;
   max-height: 500px;
 }
 
@@ -31,12 +34,6 @@
   border: 1px solid $blue-color;
   text-align: 16px;
   padding: 15px 40px;
-}
-
-@media (max-width: 1023px) {
-  .about__icon {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 767px) {
