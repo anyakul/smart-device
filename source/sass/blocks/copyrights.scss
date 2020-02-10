@@ -22,7 +22,9 @@
   .copyrights__item--sd {
     display: none;
   }
+}
 
+@media (max-width: $mobile-width) {
   .copyrights__list {
     @include flex-column;
     aligh-items: center;
@@ -33,3 +35,4 @@
     padding-bottom: 20px;
   }
 }
+

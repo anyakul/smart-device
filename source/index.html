@@ -12,11 +12,7 @@
     <section class="header__wrapper">
       <div class="header__logo">
         <a class="header__logo-link logo">
-          <!-- <picture>-->
-          <!--<source media="(min-width: 1200px)" srcset="#">
-          <source media="(min-width: 768px)" srcset="#">-->
           <img class="logo__icon" src="img/icon-logo.svg" width="40" height="40" alt="smart device">
-          <!--  </picture>-->
           <div class="logo__text">
             <span class="logo__header">Smart Device</span>
             <span class="logo__add">умные технологии</span>
@@ -28,7 +24,9 @@
       <nav class="navigation navigation--closed navigation--nojs <!--(navigation--opened)-->">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <img class="navigation__icon" src="img/icon-burger.svg" width="37" height="40" alt="smart device">
+          <svg width="37" height="13">
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
         </button>
       </nav>
 
@@ -36,13 +34,17 @@
       <ul class="contacts">
         <li class="contacts__item contacts__item--mail">
           <a href="mailto:info@sd.ru">
-            <img class="contacts__icon" src="img/icon-mail.svg" width="15" height="10" alt="smart device">
+            <svg width="19" height="14">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
             <span class="contacts__text">info@sd.ru</span>
           </a>
         </li>
         <li class="contacts__item contacts__item--phone">
           <a href="tel:+74950005252">
-            <img class="contacts__icon" src="img/icon-phone.svg" width="15" height="17" alt="smart device">
+            <svg width="18" height="18">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
             <span class="contacts__text">+7 (495) 000 52 52</span>
           </a>
         </li>
@@ -57,7 +59,11 @@
       <div class="promo__info">
         <h1 class="promo__title">Печатные платы</h1>
         <div class="promo__description">
-          <img class="promo__icon" src="img/icon-dash.svg" alt="smart device">
+          <div class="promo__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#icon-dash"></use>
+            </svg>
+          </div>
           <p class="promo__text">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
         </div>
         <button class="promo__button promo__button--desktop" type="button">Получить бесплатную консультацию</button>
@@ -179,11 +185,7 @@
           <div class="footer__left-wrapper">
             <div class="footer__logo">
               <a class="footer__logo-link footer-logo">
-                <!-- <picture>-->
-                <!--<source media="(min-width: 1200px)" srcset="#">
-                <source media="(min-width: 768px)" srcset="#">-->
                 <img class="footer-logo__icon" src="img/icon-logo.svg" width="40" height="40" alt="smart device">
-                <!--  </picture>-->
                 <div class="footer-logo__text">
                   <span class="footer-logo__header">Smart Device</span>
                   <span class="footer-logo__add">умные технологии</span>
@@ -196,18 +198,22 @@
             <ul class="footer__social-list social-list">
               <li class="social-list__item">
                 <a class="social-list__link social-list__link--facebook" href="" aria-label="facebook">
-                <!--   <img class="social-list__icon" src="img/icon-facebook.svg" width="40" height="40" alt="smart device">-->
+                <svg width="27" height="27">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
                 </a>
               </li>
               <li class="social-list__item ">
                 <a class="social-list__link social-list__link--ok" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
-                  <img class="social-list__icon" src="img/icon-ok.svg" width="40" height="40" alt="smart device">
+                  <svg width="27" height="27">
+                    <use xlink:href="img/sprite.svg#icon-ok"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link social-list__link--vk" href="https://www.instagram.com/htmlacademy" aria-label="youtube">
-                  <img class="social-list__icon" src="img/icon-vk.svg" width="40" height="40" alt="smart device">
-                </a>
+                <svg width="27" height="27">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </li>
             </ul>
           </div>

@@ -33,6 +33,11 @@
   height: 2px;
 }
 
+.promo__icon svg {
+  width: 66px;
+  height: 2px;
+}
+
 .promo__text {
   margin: 0;
 }
@@ -55,11 +60,10 @@
 }
 
 @media (max-width: $tablet-width) {
-  .promo__icon {
+  .promo__icon svg {
     width: 33px;
-    padding-top: 5px;
+    height: 2px;
   }
-
   .promo__title {
     font-size: 60px;
   }
