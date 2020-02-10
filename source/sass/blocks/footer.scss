@@ -8,3 +8,81 @@
   @include flex-row;
   @include page-size;
 }
+
+.footer__up {
+  border-bottom: 1px solid #626962;
+  padding-bottom: 50px;
+}
+
+.footer__copyrights-tablet {
+  display: none;
+}
+
+.footer__about {
+  @include flex-row;
+  width: 70%;
+}
+
+.footer__about-site {
+  width: 45%;
+}
+
+.footer__about-office {
+  width: 45%;
+}
+
+@media (max-width: $tablet-width) {
+  .footer__left {
+    border-bottom: 1px solid #626962;
+    padding-bottom: 25px;
+  }
+
+  .footer__left-wrapper {
+    @include page-size;
+    @include flex-row;
+  }
+
+  .footer__wrapper {
+    @include flex-column;
+    width: 100%;
+  }
+
+  .footer__copyrights-tablet {
+    @include footer-copyrights;
+    display: block;
+  }
+
+  .footer__about {
+    @include page-size;
+    padding-top: 30px;
+  }
+
+  .footer__up {
+    border-bottom: 1px solid #626962;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer__left-wrapper {
+    @include flex-column;
+  }
+
+  .footer__copyrights-tablet {
+    text-align: center;
+  }
+
+  .footer__about {
+    @include flex-column;
+    width: 100%;
+  }
+
+  .footer__about-site {
+    border-bottom: 1px solid #626962;
+    width: 100%;
+  }
+
+  .footer__about-office {
+    width: 100%;
+  }
+}

@@ -1,43 +1,39 @@
-.about {
+.about-company {
   @include page-size;
   margin-bottom: 50px;
 }
 
-.about__wrapper {
+.about-company__wrapper {
   @include container;
   @include flex-row;
 }
 
-.about__icon {
+.about-company__icon {
   margin-right: 30px;
-  height: 280px;
+  height: 100%;
   max-height: 500px;
 }
 
-.about__header {
-  font-family: $roboto-mono-bold-font;
-  font-size: 36px;
-  line-height: 50px;
+.about-company__header {
+  @include main-header;
   margin-bottom: 20px;
 }
 
-.about__text {
-  font-family: $pt-mono-regular-font;
-  font-size: 16px;
-  line-height: 21px;
+.about-company__text {
+  @include main-text;
   margin-bottom: 20px;
 }
 
-.about__button {
+.about-company__button {
+  @include button-text;
   color: $blue-color;
   background-color: $white-color;
   border: 1px solid $blue-color;
-  text-align: 16px;
   padding: 15px 40px;
 }
 
-@media (max-width: 767px) {
-  .about__icon {
+@media (max-width: $mobile-width) {
+  .about-company__icon {
     display: none;
   }
 }

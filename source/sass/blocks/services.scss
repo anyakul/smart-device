@@ -10,20 +10,17 @@
 
 .services__title {
   @include container;
-  font-family: $roboto-mono-regular-font;
-  color: $white-color;
-  font-size: 26px;
-  line-height: 50px;
-  margin-left: 50px;
+  @include main-header;
   @include container;
+  color: $white-color;
   margin-bottom: 50px;
 }
 
 .services__list {
   @include flex-row;
-  flex-wrap: wrap;
   @include cancel;
-  @include container
+  @include container;
+  flex-wrap: wrap;
 }
 
 .services__item {
@@ -56,7 +53,7 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 1;   
+  z-index: 1;
 }
 
 .services__item--mounting::after {
@@ -70,7 +67,7 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 1;   
+  z-index: 1;
 }
 
 .services__item--parts::after {
@@ -84,17 +81,13 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 0;   
+  z-index: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .services__list {
-    margin-left: 0;
     @include flex-column;
-  }
-  
-  .services__title {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .services__item {

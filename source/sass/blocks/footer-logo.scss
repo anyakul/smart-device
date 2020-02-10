@@ -1,5 +1,6 @@
 .footer-logo {
   @include flex-row;
+  margin-bottom: 30px;
 }
 
 .footer-logo__icon {
@@ -12,16 +13,18 @@
 }
 
 .footer-logo__header {
-  font-family: $roboto-mono-bold-font;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
+  @include logo-header;
   color: $footer-logo-color;
 }
 
 .footer-logo__add {
-  font-family: $roboto-mono-regular-font;
-  font-weight: 500;
-  font-size: 12px;
-  color: $grey-color;
+  @include logo-add;
+}
+
+@media (max-width: $mobile-width) {
+  .footer-logo {
+    @include flex-row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
 }

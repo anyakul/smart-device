@@ -38,9 +38,7 @@
 }
 
 .advantages__text {
-  font-family: $pt-mono-regular-font;
-  font-size: 16px;
-  line-height: 22px;
+  @include main-text;
   color: $black-color;
 }
 
@@ -52,57 +50,31 @@
 }
 
 .advantages__item--contractor::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 45px;
-  width: 35px;
-  height: 35px;
+  @include icon-absolute-position;
   background-image: url("../img/icon-people.svg");
-  background-repeat: no-repeat;
 }
 
 .advantages__item--detective::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 45px;
-  width: 35px;
-  height: 30px;
+  @include icon-absolute-position;
   background-image: url("../img/icon-detective.svg");
-  background-repeat: no-repeat;
 }
 
 .advantages__item--price::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 45px;
-  width: 35px;
-  height: 30px;
+  @include icon-absolute-position;
   background-image: url("../img/icon-price.svg");
-  background-repeat: no-repeat;
 }
 
 .advantages__item--time::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 45px;
-  width: 35px;
-  height: 30px;
+  @include icon-absolute-position;
   background-image: url("../img/icon-clock-active.svg");
-  background-repeat: no-repeat;
 }
 
-@media (max-width: 1023px) {
-  .advantages__list {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .advantages__item {
     width: 100%;
+  }
+
+  .advantages__title {
+    font-size: 20px;
   }
 }

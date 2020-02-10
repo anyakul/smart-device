@@ -12,21 +12,15 @@
 }
 
 .logo__header {
-  font-family: $roboto-mono-bold-font;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
+  @include logo-header;
   color: $white-color;
 }
 
 .logo__add {
-  font-family: $roboto-mono-regular-font;
-  font-weight: 500;
-  font-size: 12px;
-  color: $grey-color;
+  @include logo-add;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .logo__text {
     display: none;
   }

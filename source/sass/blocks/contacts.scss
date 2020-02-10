@@ -27,7 +27,7 @@
   border: 1px solid $white-color;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .contacts {
     width: 10%;
   }

@@ -23,20 +23,16 @@
 }
 
 .stay__header {
-  font-family: $roboto-mono-regular-font;
-  font-size: 26px;
-  line-height: 50px;
+  @include main-header;
   font-weight: normal;
 }
 
 .stay__text {
-  font-family: $pt-mono-regular-font;
-  font-size: 16px;
-  line-height: 22px;
+  @include main-text;
   margin-bottom: 30px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .stay__icon {
     display: none;
   }

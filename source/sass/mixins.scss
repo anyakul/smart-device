@@ -1,0 +1,111 @@
+@mixin main-header {
+  font-size: 36px;
+  font-family: $roboto-mono-bold-font;
+  line-height: 51px;
+  font-weight: normal;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+  }
+}
+
+@mixin main-text {
+  font-size: 16px;
+  font-family: $pt-mono-regular-font;
+  line-height: 22px;
+}
+
+@mixin button-text {
+  font-size: 14px;
+  font-family: $pt-mono-bold-font;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@mixin cancel {
+  list-style: none;
+}
+
+@mixin page-size {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin container {
+  width: 85%;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+@mixin logo-header {
+  font-family: $roboto-mono-bold-font;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+@mixin logo-add {
+  font-family: $roboto-mono-regular-font;
+  font-weight: 500;
+  font-size: 12px;
+  color: $grey-color;
+}
+
+@mixin footer-title {
+  font-family: $roboto-mono-regular-font;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@mixin footer-list-item {
+  font-family: $pt-mono-regular-font;
+  font-size: 15px;
+  color: $header-bg-color;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+@mixin footer-copyrights {
+  font-family: $pt-mono-regular-font;
+  font-size: 13px;
+  line-height: 24px;
+  color: $header-bg-color;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin icon-absolute-position {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    top: 25px;
+    left: 25px;
+  }
+}

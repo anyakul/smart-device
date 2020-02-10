@@ -99,21 +99,21 @@
     </section> <!-- end advantages -->
 
     <!--about-->
-    <section class="about">
-      <div class="about__wrapper">
-        <img class="about__icon" src="img/year.png" alt="smart device">
-        <div class="about__explanation">
-          <h2 class="about__header">О компании</h2>
-          <p class="about__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
+    <section class="about-company">
+      <div class="about-company__wrapper">
+        <img class="about-company__icon" src="img/year.png" alt="smart device">
+        <div class="about-company__explanation">
+          <h2 class="about-company__header">О компании</h2>
+          <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые
           технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
+          <p class="about-company__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC,
           REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),
           РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-          <button class="about__button">Подробнее</button>
+          <button class="about-company__button">Подробнее</button>
         </div>
       </div>
     </section>
-    
+
     <!--services-->
     <section class="services">
       <div class="services__wrapper">
@@ -172,70 +172,82 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <section class="footer__left">
-        <div class="footer__logo">
-          <a class="footer__logo-link logo">
-            <!-- <picture>-->
-            <!--<source media="(min-width: 1200px)" srcset="#">
-            <source media="(min-width: 768px)" srcset="#">-->
-            <img class="footer-logo__icon" src="img/icon-logo.svg" width="40" height="40" alt="smart device">
-            <!--  </picture>-->
-            <div class="footer-logo__text">
-              <span class="footer-logo__header">Smart Device</span>
-              <span class="footer-logo__add">умные технологии</span>
+    <div class="footer__up">
+      <div class="footer__wrapper">
+
+        <section class="footer__left">
+          <div class="footer__left-wrapper">
+            <div class="footer__logo">
+              <a class="footer__logo-link footer-logo">
+                <!-- <picture>-->
+                <!--<source media="(min-width: 1200px)" srcset="#">
+                <source media="(min-width: 768px)" srcset="#">-->
+                <img class="footer-logo__icon" src="img/icon-logo.svg" width="40" height="40" alt="smart device">
+                <!--  </picture>-->
+                <div class="footer-logo__text">
+                  <span class="footer-logo__header">Smart Device</span>
+                  <span class="footer-logo__add">умные технологии</span>
+                </div>
+              </a>
             </div>
-          </a>
+
+            <p class="footer__copyrights-tablet">1999-2018 SD Service Devices</p>
+
+            <ul class="footer__social-list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--facebook" href="" aria-label="facebook">
+                <!--   <img class="social-list__icon" src="img/icon-facebook.svg" width="40" height="40" alt="smart device">-->
+                </a>
+              </li>
+              <li class="social-list__item ">
+                <a class="social-list__link social-list__link--ok" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
+                  <img class="social-list__icon" src="img/icon-ok.svg" width="40" height="40" alt="smart device">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--vk" href="https://www.instagram.com/htmlacademy" aria-label="youtube">
+                  <img class="social-list__icon" src="img/icon-vk.svg" width="40" height="40" alt="smart device">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="footer__about">
+          <div class="footer__about-site">
+            <section class="about-site">
+              <h2 class="about-site__title">Разделы сайта</h2>
+
+              <ul class="about-site__list">
+                <li class="about-site__item"><a class="about-site__link" href="#">О компании</a></li>
+                <li class="about-site__item"><a class="about-site__link" href="#">Продукты</a></li>
+                <li class="about-site__item"><a class="about-site__link" href="#">Производство печатных плат</a></li>
+                <li class="about-site__item"><a class="about-site__link" href="#">Монтаж печатных плат</a></li>
+                <li class="about-site__item"><a class="about-site__link" href="#">Комплектующие</a></li>
+                <li class="about-site__item"><a class="about-site__link" href="#">Доставка</a></li>
+                <li class="about-site__item"><a class="about-site__link" href="#">Контакты</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="footer__about-office">
+            <section class="about-office">
+              <h2 class="about-office__title">Наш офис</h2>
+              <ul class="about-office__list">
+                <li class="about-office__item"><a class="about-office__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a></li>
+                <li class="about-office__item"><a class="about-office__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+                <li class="about-office__item"><a class="about-office__link" href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+                <li class="about-office__item"><a class="about-office__link" href="tel:+792692608079">+7 (926) 926-080-79</a></li>
+              </ul>
+            </section>
+          </div>
         </div>
-
-        <ul class="footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--facebook" href="" aria-label="facebook">
-              <!-- svg -->
-            </a>
-          </li>
-          <li class="social-list__item ">
-            <a class="social-list__link social-list__link--ok" href="https://www.facebook.com/htmlacademy" aria-label="facebook">
-              <!-- svg -->
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="https://www.instagram.com/htmlacademy" aria-label="youtube">
-              <!-- svg -->
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="about-site">
-        <h2 class="about-site__title">Разделы сайта</h2>
-
-        <ul class="about-site__list">
-          <li class="about-site__item"><a class="about-site__link" href="#">О компании</a></li>
-          <li class="about-site__item"><a class="about-site__link" href="#">Продукты</a></li>
-          <li class="about-site__item"><a class="about-site__link" href="#">Производство печатных плат</a></li>
-          <li class="about-site__item"><a class="about-site__link" href="#">Монтаж печатных плат</a></li>
-          <li class="about-site__item"><a class="about-site__link" href="#">Комплектующие</a></li>
-          <li class="about-site__item"><a class="about-site__link" href="#">Доставка</a></li>
-          <li class="about-site__item"><a class="about-site__link" href="#">Контакты</a></li>
-        </ul>
-      </section>
-
-      <section class="about-office office-info">
-        <h2 class="office-info__title">Наш офис</h2>
-        <ul class="office-info__list">
-          <li class="office-info__item"><a class="office-info__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a></li>
-          <li class="office-info__item"><a class="office-info__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
-          <li class="office-info__item"><a class="office-info__link" href="tel:+79250038767">+7 (925) 003-87-67</a></li>
-          <li class="office-info__item"><a class="office-info__link" href="tel:+792692608079">+7 (926) 926-080-79</a></li>
-        </ul>
-      </section>
+      </div>
     </div>
 
     <section class="copyrights">
       <ul class="copyrights__list">
-        <li class="copyrights__item">Все права защищены</li>
-        <li class="copyrights__item">1999-2018 SD Service Devices</li>
+        <li class="copyrights__item copyrights__item--all-rights">Все права защищены</li>
+        <li class="copyrights__item copyrights__item--sd">1999-2018 SD Service Devices</li>
         <li class="copyrights__item"><a class="copyrights__info" href="#">Условия конфиденциальности</a></li>
         <li class="copyrights__item"><a class="copyrights__info" href="#">Developed by wow studio</a></li>
       </ul>

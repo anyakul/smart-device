@@ -1,0 +1,25 @@
+.copyrights {
+  @include page-size;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.copyrights__list {
+  @include flex-row;
+  @include cancel;
+}
+
+.copyrights__item,
+.copyrights__info {
+  @include footer-copyrights;
+}
+
+@media (max-width: $tablet-width) {
+  .copyrights__item--all-rights {
+    display: none;
+  }
+
+  .copyrights__item--sd {
+    display: none;
+  }
+}

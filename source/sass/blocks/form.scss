@@ -14,11 +14,10 @@
   padding-right: 0%;
   margin-bottom: 30px;
   width: 95%;
-  opacity: 0.1;
 }
 
 .form__item-input [placeholder] {
-  color: #white-color;
+  color: $white-color;
 }
 
 .form__item--name,
@@ -40,16 +39,15 @@
 }
 
 .form__buttons {
-  font-family: $roboto-mono-bold-font;
   @include flex-row;
+  font-family: $roboto-mono-bold-font;
   color: $white-color;
   flex-wrap: wrap;
 }
 
 .form__button {
-  font-family: $roboto-mono-bold-font;
+  @include button-text;
   color: $white-color;
-  font-size: 14px;
   padding: 5px;
   width: 40%;
   background-color: $blue-color;
@@ -67,18 +65,21 @@
   background-color: $blue-color;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .form__buttons {
     @include flex-column;
   }
-  
+
   .form__button {
     width: 100%;
   }
-  
+
   .form__label {
     width: 100%;
   }
 
+  .form__item {
+    width: 100%;
+    // background-color: rgba(0, 178, 255, 0.4);
+  }
 }
-

@@ -1,0 +1,4 @@
+.social-list {
+  @include flex-row;
+  @include cancel;
+}

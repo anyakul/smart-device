@@ -21,7 +21,7 @@
 .promo__description {
   @include flex-row;
   font-family: $roboto-mono-regular-font;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 34px;
   width: 75%;
 }
@@ -41,6 +41,7 @@
   font-family: $pt-mono-regular-font;
   color: $white-color;
   background-color: $blue-color;
+  font-size: 16px;
   padding: 15px 30px;
   border: none;
   font-weight: bold;
@@ -53,7 +54,7 @@
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet-width) {
   .promo__icon {
     width: 33px;
     padding-top: 5px;
@@ -66,9 +67,13 @@
   .promo__button {
     margin-left: 50px;
   }
+
+  .promo__description {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width) {
   .promo {
     background-size: 100%;
     background-position: 20% 0;
@@ -89,5 +94,13 @@
   .promo__button {
     width: 100%;
     margin: 0;
+  }
+
+  .promo__title {
+    font-size: 40px;
+  }
+
+  .promo__description {
+    font-size: 16px;
   }
 }
