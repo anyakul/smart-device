@@ -1,7 +1,6 @@
 @import "variables.scss";
 @import "fonts.scss";
 
-
 // header
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
@@ -13,3 +12,11 @@
 @import "blocks/about.scss";
 @import "blocks/advantages.scss";
 @import "blocks/services.scss";
+@import "blocks/stay.scss";
+@import "blocks/form.scss";
+
+// footer
+@import "blocks/footer.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/about-site.scss";
+@import "blocks/about-office.scss";

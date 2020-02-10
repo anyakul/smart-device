@@ -1,0 +1,47 @@
+.stay {
+  background-color: $blue-color;
+  padding-bottom: 30px;
+}
+
+.stay__container {
+  @include page-size;
+}
+
+.stay__wrapper {
+  @include container;
+  @include flex-row;
+  margin-top: 90px;
+  color: $white-color;
+}
+
+.stay__forms {
+  width: 60%;
+}
+
+.stay-icon {
+  padding-top: 40px;
+}
+
+.stay__header {
+  font-family: $roboto-mono-regular-font;
+  font-size: 26px;
+  line-height: 50px;
+  font-weight: normal;
+}
+
+.stay__text {
+  font-family: $pt-mono-regular-font;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1023px) {
+  .stay__icon {
+    display: none;
+  }
+
+  .stay__forms {
+    width: 100%;
+  }
+}

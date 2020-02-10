@@ -1,6 +1,5 @@
 .services {
   background-color: $header-bg-color;
-  margin-bottom: 50px;
   padding-top: 80px;
   padding-bottom: 60px;
 }
@@ -31,8 +30,9 @@
   position: relative;
   padding-top: 50px;
   padding-left: 50px;
+  padding-right: 10px;
   min-height: 400px;
-  width: 27%;
+  width: 25%;
   background-size: 100%;
   background-color: transparent;
   margin-bottom: 20px;
@@ -56,7 +56,7 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 0;   
+  z-index: 1;   
 }
 
 .services__item--mounting::after {
@@ -70,7 +70,7 @@
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: 0;   
+  z-index: 1;   
 }
 
 .services__item--parts::after {

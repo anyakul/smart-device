@@ -1,0 +1,24 @@
+.about-site {
+  width: 30%;
+}
+
+.about-site__title {
+  font-family: $roboto-mono-regular-font;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.about-site__list {
+  @include cancel;
+  @include flex-row;
+  flex-wrap: wrap;
+}
+
+.about-site__link {
+  font-family: $pt-mono-regular-font;
+  font-size: 15px;
+  color: $header-bg-color;
+  font-weight: normal;
+  text-decoration: none;
+}

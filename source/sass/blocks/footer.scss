@@ -1,0 +1,10 @@
+.footer {
+  background-color: $footer-bg-color;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.footer__wrapper {
+  @include flex-row;
+  @include page-size;
+}
