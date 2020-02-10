@@ -109,3 +109,20 @@
     left: 25px;
   }
 }
+
+@mixin toggle {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: none;
+    background-repeat: no-repeat;
+  }
+}

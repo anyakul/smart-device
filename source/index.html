@@ -215,8 +215,11 @@
 
         <div class="footer__about">
           <div class="footer__about-site">
-            <section class="about-site">
+            <section class="about-site about-site--closed <!--(about-site--opened)-->">
               <h2 class="about-site__title">Разделы сайта</h2>
+              <button class="about-site__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
 
               <ul class="about-site__list">
                 <li class="about-site__item"><a class="about-site__link" href="#">О компании</a></li>
@@ -230,8 +233,11 @@
             </section>
           </div>
           <div class="footer__about-office">
-            <section class="about-office">
+            <section class="about-office about-office--closed <!--(about-office--opened)-->">
               <h2 class="about-office__title">Наш офис</h2>
+              <button class="about-office__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
               <ul class="about-office__list">
                 <li class="about-office__item"><a class="about-office__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a></li>
                 <li class="about-office__item"><a class="about-office__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
@@ -253,5 +259,7 @@
       </ul>
     </section>
   </footer>
+  <script src="js/about-site-script.js"></script>
+  <script src="js/about-office-script.js"></script>
 </body>
 </html>

@@ -11,6 +11,10 @@
   @include footer-list-item;
 }
 
+.about-office__toggle {
+  @include toggle;
+}
+
 @media (max-width: $tablet-width) {
   .about-office {
     width: 100%;
@@ -21,9 +25,28 @@
   .about-office__title,
   .about-office__list {
     @include page-size;
+    margin-bottom: 20px;
   }
 
   .about-office {
-    padding: 30px 0;
+    padding-top: 20px;
+    position: relative;
+  }
+
+
+  .about-office--closed .about-office__list {
+    display: none;
+  }
+
+  .about-office--opened .about-office__list {
+    display: block;
+  }
+
+  .about-office--closed .about-office__toggle {
+    background-image: url("../img/icon-plus.svg");
+  }
+
+  .about-office--opened .about-office__toggle {
+    background-image: url("../img/icon-minus.svg");
   }
 }

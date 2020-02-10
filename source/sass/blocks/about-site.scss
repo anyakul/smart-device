@@ -10,6 +10,10 @@
   flex-wrap: wrap;
 }
 
+.about-site__toggle {
+  @include toggle;
+}
+
 .about-site__item {
   width: 50%;
 }
@@ -26,11 +30,29 @@
 
 @media (max-width: $mobile-width) {
   .about-site {
-    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .about-site--closed .about-site__list {
+    display: none;
+  }
+
+  .about-site--opened .about-site__list {
+    display: block;
+  }
+
+  .about-site--closed .about-site__toggle {
+    background-image: url("../img/icon-plus.svg");
+  }
+
+  .about-site--opened .about-site__toggle {
+    background-image: url("../img/icon-minus.svg");
   }
 
   .about-site__title,
   .about-site__list {
     @include page-size;
+    margin-bottom: 20px;
   }
 }

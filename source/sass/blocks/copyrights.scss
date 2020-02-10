@@ -22,4 +22,14 @@
   .copyrights__item--sd {
     display: none;
   }
+
+  .copyrights__list {
+    @include flex-column;
+    aligh-items: center;
+  }
+
+  .copyrights__item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
