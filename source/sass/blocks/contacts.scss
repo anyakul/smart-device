@@ -1,7 +1,6 @@
 .contacts {
   @include cancel;
   @include flex-row;
-  width: 55%;
 }
 
 .contacts__item {
@@ -13,25 +12,17 @@
 .contacts__item a {
   color: $white-color;
   font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
 }
 
 .contacts__button {
-  color: $white-color;
-  font-family: $roboto-mono-bold-font;
-  font-size: 14px;
-  line-height: 16px;
+  @include white-button;
   padding: 12px;
   margin-top: -18px;
-  background-color: transparent;
-  border: 1px solid $white-color;
 }
 
 @media (max-width: $tablet-width) {
-  .contacts {
-    width: 10%;
-  }
-
   .contacts__text {
     display: none;
   }

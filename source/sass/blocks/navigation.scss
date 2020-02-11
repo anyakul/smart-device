@@ -1,22 +1,5 @@
-.navigation {
-  margin-right: 10%;
-  margin-left: 5%;
-}
-
 .navigation__toggle {
+  margin-top: 11px;
   background: transparent;
   border: none;
-  margin-top: 12px;
-}
-
-@media (max-width: $tablet-width) {
-  .navigation {
-    margin-right: 0;
-    margin-left: 50%;
-  }
-
-  .navigation__toggle {
-    background: transparent;
-    border: none;
-  }
 }

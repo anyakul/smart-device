@@ -27,6 +27,13 @@
   text-transform: uppercase;
 }
 
+@mixin white-button {
+  @include button-text;
+  color: $white-color;
+  background-color: transparent;
+  border: 1px solid $white-color;
+}
+
 @mixin cancel {
   list-style: none;
 }
