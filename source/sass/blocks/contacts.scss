@@ -4,9 +4,13 @@
 }
 
 .contacts__item {
-  margin-right: 20px;
   padding-top: 10px;
+  margin-right: 20px;
   font-family: $pt-mono-regular-font;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
 }
 
 .contacts__item a {
@@ -25,6 +29,10 @@
 @media (max-width: $tablet-width) {
   .contacts__text {
     display: none;
+  }
+
+  .contacts__item {
+    margin-right: 0;
   }
 
   .contacts__button {

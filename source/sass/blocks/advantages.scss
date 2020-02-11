@@ -8,17 +8,18 @@
   @include flex-row;
   @include container;
   flex-wrap: wrap;
-  padding-top: 110px;
+  padding-top: 115px;
+  align-items: stretch;
 }
 
 .advantages__item {
   position: relative;
   width: 43%;
   margin-bottom: 20px;
-  padding-top: 75px;
+  padding-top: 100px;
   padding-left: 30px;
   padding-right: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   border: 1px solid $border-color;
   border-left: 3px solid $blue-color;
 }
@@ -72,6 +73,7 @@
 @media (max-width: $tablet-width) {
   .advantages__item {
     padding-left: 25px;
+    width: 43%;
   }
 }
 

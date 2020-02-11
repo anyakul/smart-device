@@ -39,8 +39,7 @@
 }
 
 @mixin page-size {
-  width: 74%;
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   overflow: hidden;
 
@@ -61,7 +60,7 @@
 }
 
 @mixin container {
-  width: 85%;
+  width: 74%;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
