@@ -39,9 +39,14 @@
 }
 
 @mixin page-size {
-  width: 90%;
+  width: 74%;
+  max-width: 90%;
   margin: 0 auto;
   overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 94%;
+  }
 }
 
 @mixin flex-row {

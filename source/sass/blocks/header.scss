@@ -11,7 +11,7 @@
 }
 
 .header__logo {
-  width: 250px;
+  width: 260px;
 }
 
 .header__navigation {
@@ -20,7 +20,8 @@
 }
 
 .header__contacts {
-  width: 55%;
+  min-width: 47%;
+  max-width: 60%;
   padding-right: 0;
 }
 
@@ -29,19 +30,36 @@
 }
 
 @media (max-width: $tablet-width) {
-  .header__navigation {
-    margin-right: 0;
-    margin-left: 50%;
+  .header__wrapper {
+    @include page-size;
+    @include flex-row;
+    margin-bottom: 40px;
+    padding-top: 25px;
   }
 
+  .header__logo {
+    width: 260px;
+  }
+
+  .header__navigation {
+    margin-right: 20px;
+    margin-left: 35%;
+  }
+
+
   .header__contacts {
-    width: 10%;
+    min-width: 10%;
     margin-left: 20px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .header__contacts {
-    padding-right: 20px;
+    margin-right: 20px;
+  }
+
+  .header__navigation {
+    margin-right: 20px;
+    margin-left: 12%;
   }
 }
