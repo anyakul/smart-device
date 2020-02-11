@@ -1,21 +1,28 @@
 .promo {
+  @include flex-row;
   color: $white-color;
   padding-bottom: 40px;
-  background-image: url("../../img/motherboard.png");
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: 100% 60%;
   padding-top: 60px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.promo__image {
+  min-width: inherit;
+  margin: 0 0 0 10%;
+  position: relative;
+  left: 0;
 }
 
 .promo__info {
-  width: 70%;
+  width: 500px;
 }
 
 .promo__title {
   font-family: $roboto-mono-regular-font;
   text-transform: uppercase;
   font-size: 80px;
+  width: 100%;
 }
 
 .promo__description {
@@ -27,8 +34,9 @@
 }
 
 .promo__icon {
+  text-align: left;
+  margin: 0;
   margin-right: 20px;
-  margin-top: 10px;
   width: 66px;
   height: 2px;
 }
@@ -40,6 +48,7 @@
 
 .promo__text {
   margin: 0;
+  width: 100%;
 }
 
 .promo__button {
@@ -51,7 +60,7 @@
   border: none;
   font-weight: bold;
   margin-top: 40px;
-  margin-left: 75px;
+  margin-left: 86px;
   text-transform: uppercase;
 }
 
