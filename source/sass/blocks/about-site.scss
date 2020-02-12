@@ -1,17 +1,21 @@
+.about-site {
+  width: 45%;
+}
+
 .about-site__title {
   @include footer-title;
   margin-bottom: 30px;
 }
 
+.about-site__toggle {
+  @include toggle;
+}
+
 .about-site__list {
   @include cancel;
   @include flex-row;
-  text-align: left;
   flex-wrap: wrap;
-}
-
-.about-site__toggle {
-  @include toggle;
+  text-align: left;
 }
 
 .about-site__item {
@@ -33,6 +37,8 @@
   .about-site {
     padding-top: 20px;
     position: relative;
+    border-bottom: 1px solid #626962;
+    width: 100%;
   }
 
   .about-site--closed .about-site__list {

@@ -5,14 +5,19 @@
 }
 
 .copyrights__list {
-  @include flex-row;
   @include cancel;
+  @include flex-row;
+  flex-wrap: wrap;
 }
 
 .copyrights__item,
 .copyrights__info {
   @include footer-copyrights;
   @include black-link;
+}
+
+.copyrights__item:last-child {
+  margin-left: 10%;
 }
 
 @media (max-width: $tablet-width) {

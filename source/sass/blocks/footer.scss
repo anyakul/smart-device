@@ -1,17 +1,17 @@
 .footer {
-  background-color: $footer-bg-color;
   padding-top: 55px;
   padding-bottom: 55px;
+  background-color: $footer-bg-color;
+}
+
+.footer__up {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #626962;
 }
 
 .footer__wrapper {
   @include flex-row;
   @include page-size;
-}
-
-.footer__up {
-  border-bottom: 1px solid #626962;
-  padding-bottom: 50px;
 }
 
 .footer__copyrights-tablet {
@@ -23,15 +23,12 @@
   width: 70%;
 }
 
-.footer__about-site {
-  width: 45%;
-}
-
-.footer__about-office {
-  width: 45%;
-}
-
 @media (max-width: $tablet-width) {
+  .footer__wrapper {
+    @include flex-column;
+    width: 100%;
+  }
+
   .footer__left {
     border-bottom: 1px solid #626962;
     padding-bottom: 25px;
@@ -40,11 +37,6 @@
   .footer__left-wrapper {
     @include page-size;
     @include flex-row;
-  }
-
-  .footer__wrapper {
-    @include flex-column;
-    width: 100%;
   }
 
   .footer__copyrights-tablet {
@@ -56,14 +48,13 @@
     @include page-size;
     padding-top: 30px;
   }
-
-  .footer__up {
-    border-bottom: 1px solid #626962;
-    padding-bottom: 50px;
-  }
 }
 
 @media (max-width: $mobile-width) {
+  .footer__up {
+    padding-bottom: 0;
+  }
+
   .footer__logo {
     margin-bottom: 20px;
   }
@@ -75,8 +66,6 @@
   .footer__about {
     @include flex-column;
     padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
     width: 100%;
   }
 
@@ -92,9 +81,5 @@
 
   .footer__about-office {
     width: 100%;
-  }
-
-  .footer__up {
-    padding-bottom: 0;
   }
 }

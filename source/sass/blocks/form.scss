@@ -63,16 +63,9 @@
     @include flex-column;
   }
 
-  .form__button {
-    width: 100%;
-  }
-
-  .form__label {
-    width: 100%;
-  }
-
+  .form__button,
+  .form__label,
   .form__item {
     width: 100%;
-    // background-color: rgba(0, 178, 255, 0.4);
   }
 }

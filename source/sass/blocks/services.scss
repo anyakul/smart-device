@@ -11,9 +11,8 @@
 .services__title {
   @include container;
   @include main-header;
-  @include container;
-  color: $white-color;
   margin-bottom: 50px;
+  color: $white-color;
 }
 
 .services__list {
@@ -25,42 +24,45 @@
 
 .services__item {
   position: relative;
+  margin-bottom: 20px;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 10px;
   min-height: 400px;
+  max-height: 100%;
   width: 24%;
   background-size: 100%;
   background-color: transparent;
-  margin-bottom: 20px;
+
+  &--parts::after {
+    @include picture-after;
+    background-size: cover;
+    background-image: url("../../img/parts.png");
+  }
+
+  &--mounting::after {
+    @include picture-after;
+    background-image: url("../../img/mounting.png");
+    background-size: cover;
+  }
+
+  &--production::after {
+    @include picture-after;
+    background-image: url("../../img/producing.png");
+    background-size: cover;
+  }
 }
 
 .services__info {
-  position: absolute;
+  position: relative;
   color: $white-color;
   font-size: 20px;
   z-index: 10;
 }
 
-.services__item--parts::after {
-  @include picture-after;
-  background-image: url("../../img/parts.png");
-}
-
-.services__item--production::after {
-  @include picture-after;
-  background-image: url("../../img/producing.png");
-}
-
-.services__item--mounting::after {
-  @include picture-after;
-  background-image: url("../../img/mounting.png");
-}
-
 @media (max-width: $tablet-width) {
   .services__list {
     @include flex-column;
-    margin-left: 0;
   }
 
   .services__item {

@@ -1,16 +1,17 @@
 .contacts {
   @include cancel;
   @include flex-row;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
-  padding-top: 10px;
   margin-right: 20px;
+  padding-top: 10px;
   font-family: $pt-mono-regular-font;
-}
 
-.contacts__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .contacts__item a {
@@ -26,8 +27,8 @@
 
 .contacts__button {
   @include white-button;
-  padding: 12px 27px;
   margin-top: -18px;
+  padding: 12px 27px;
 }
 
 @media (max-width: $tablet-width) {

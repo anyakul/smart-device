@@ -1,3 +1,7 @@
+.about-office {
+  width: 45%;
+}
+
 .about-office__title {
   @include footer-title;
   margin-bottom: 30px;
@@ -16,24 +20,18 @@
   @include toggle;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .about-office {
+    padding-top: 20px;
+    position: relative;
     width: 100%;
   }
-}
 
-@media (max-width: $mobile-width) {
   .about-office__title,
   .about-office__list {
     @include page-size;
     margin-bottom: 20px;
   }
-
-  .about-office {
-    padding-top: 20px;
-    position: relative;
-  }
-
 
   .about-office--closed .about-office__list {
     display: none;

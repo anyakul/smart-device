@@ -1,6 +1,6 @@
 .stay {
-  background-color: $blue-color;
   padding-bottom: 30px;
+  background-color: $blue-color;
 }
 
 .stay__container {
@@ -21,10 +21,6 @@
   margin-left: 50%;
 }
 
-.stay-icon {
-  padding-top: 40px;
-}
-
 .stay__header {
   @include main-header;
   font-weight: normal;
@@ -38,10 +34,6 @@
 }
 
 @media (max-width: $tablet-width) {
-  .stay__icon {
-    display: none;
-  }
-
   .stay__container {
     background-image: none;
   }

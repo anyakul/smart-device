@@ -1,8 +1,7 @@
 .promo {
-  @include flex-row;
-  color: $white-color;
-  padding-bottom: 40px;
   margin: 0 auto;
+  padding-bottom: 230px;
+  color: $white-color;
   background-image: url("../../img/motherboard.png");
   background-size: 700px 500px;
   background-repeat: no-repeat;
@@ -10,28 +9,26 @@
 }
 
 .promo__title {
+  margin-bottom: 30px;
   padding-top: 60px;
+  width: 100%;
   font-family: $roboto-mono-regular-font;
   text-transform: uppercase;
   font-size: 80px;
-  margin-bottom: 30px;
-  width: 100%;
 }
 
 .promo__description {
   @include flex-row;
+  width: 60%;
   font-family: $roboto-mono-regular-font;
   font-size: 22px;
   line-height: 34px;
-  width: 80%;
 }
 
 .promo__icon {
-  text-align: left;
   margin: 0;
   margin-right: 20px;
-  width: 66px;
-  height: 2px;
+  text-align: left;
 }
 
 .promo__icon svg {
@@ -41,15 +38,15 @@
 
 .promo__text {
   margin: 0;
-  width: 100%;
+  width: 85%;
 }
 
 .promo__button {
   @include blue-button;
-  font-size: 16px;
-  padding: 15px 30px;
   margin-top: 40px;
   margin-left: 86px;
+  padding: 15px 30px;
+  font-size: 16px;
 }
 
 .promo__button--mobile {
@@ -57,14 +54,8 @@
 }
 
 @media (max-width: $tablet-width) {
-  .promo {
-    background-size: 700px 500px;
-    background-origin: border-box;
-  }
-
   .promo__icon svg {
     width: 33px;
-    height: 2px;
   }
 
   .promo__title {
@@ -81,25 +72,21 @@
 }
 
 @media (max-width: $mobile-width) {
+  .promo {
+    padding-bottom: 30px;
+    background-size: 100% 300px;
+    background-position: center top;
+  }
+
   .promo__title {
     margin-top: 220px;
-    font-family: $roboto-mono-regular-font;
-    text-transform: uppercase;
     font-size: 40px;
+  }
+
+  .promo__description {
     margin-bottom: 30px;
     width: 100%;
-  }
-
-  .promo__button--desktop {
-    display: none;
-  }
-
-  .promo__info {
-    width: 100%;
-  }
-
-  .promo__button--mobile {
-    display: block;
+    font-size: 16px;
   }
 
   .promo__button {
@@ -107,12 +94,11 @@
     margin: 0;
   }
 
-  .promo__description {
-    font-size: 16px;
+  .promo__button--desktop {
+    display: none;
   }
 
-  .promo {
-    background-size: 100% 300px;
-    background-position: center top;
+  .promo__button--mobile {
+    display: block;
   }
 }

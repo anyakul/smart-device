@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: 80px;
   background-color: $header-bg-color;
   background-image: url("../../img/background.png");
 }
@@ -19,10 +20,6 @@
   min-width: 70%;
 }
 
-.header__navigation {
-  margin-right: 10px;
-}
-
 .header__contacts {
   min-width: 80%;
 }
@@ -38,10 +35,6 @@
 
   .header__menu {
     min-width: 150px;
-  }
-
-  .header__navigation {
-    margin-right: 0;
   }
 
   .header__contacts {
