@@ -9,6 +9,7 @@
 
 .about-office__link {
   @include footer-list-item;
+  @include black-link;
 }
 
 .about-office__toggle {

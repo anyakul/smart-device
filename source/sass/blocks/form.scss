@@ -14,8 +14,8 @@
 }
 
 .form__item-input [placeholder] {
-  color: $white-color;
   @include main-text;
+  color: $white-color;
 }
 
 .form__item--name,
@@ -46,6 +46,7 @@
 }
 
 .form__label {
+  @include white-link;
   width: 50%;
   opacity: 0.8;
 }

@@ -29,6 +29,6 @@
 }
 
 .popup-form__item-input [placeholder] {
-  color: $white-color;
   @include main-text;
+  color: $white-color;
 }

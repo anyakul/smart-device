@@ -20,6 +20,10 @@
   text-decoration: none;
 }
 
+.contacts__text {
+  @include white-link;
+}
+
 .contacts__button {
   @include white-button;
   padding: 12px 27px;

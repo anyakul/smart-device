@@ -26,9 +26,7 @@
 
 .about-company__button {
   @include button-text;
-  color: $blue-color;
-  background-color: $white-color;
-  border: 1px solid $blue-color;
+  @include blue-border-button;
   padding: 15px 40px;
 }
 

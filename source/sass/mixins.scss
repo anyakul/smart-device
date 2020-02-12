@@ -1,3 +1,18 @@
+@mixin cancel {
+  list-style: none;
+}
+
+@mixin page-size {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    width: 94%;
+  }
+}
+
 @mixin main-header {
   font-size: 36px;
   font-family: $roboto-mono-bold-font;
@@ -32,20 +47,79 @@
   color: $white-color;
   background-color: transparent;
   border: 1px solid $white-color;
+
+  &:hover {
+    color: #dbdbdb;
+    border: 1px solid #dbdbdb;
+  }
+
+  &:active,
+  &:focus {
+    color: #8a8a8a;
+    border: 1px solid #8a8a8a;
+  }
 }
 
-@mixin cancel {
-  list-style: none;
+@mixin blue-button {
+  font-family: $pt-mono-regular-font;
+  color: $white-color;
+  background-color: $blue-color;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #2b6cc4;
+    color: #dbdbdb;
+    border: none;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #0b3161;
+    color: #8a8a8a;
+    border: none;
+  }
 }
 
-@mixin page-size {
-  max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
+@mixin blue-border-button {
+  @include button-text;
+  color: $blue-color;
+  background-color: $white-color;
+  border: 1px solid $blue-color;
 
-  @media (max-width: $tablet-width) {
-    width: 94%;
+  &:hover {
+    border: 1px solid #2b6cc4;
+    color: #2b6cc4;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #0b3161;
+    color: #0b3161;
+  }
+}
+
+@mixin white-link {
+  &:hover {
+    color: #dbdbdb;
+  }
+
+  &:active,
+  &:focus {
+    color: #8a8a8a;
+  }
+}
+
+@mixin black-link {
+  &:hover {
+    color: #8a8a8a;
+  }
+
+  &:active,
+  &:focus {
+    color: #dbdbdb;
   }
 }
 
@@ -158,6 +232,15 @@
   background-color: rgba(255, 255, 255, 0.1);
   width: 90%;
   color: $white-color;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
 }
 
 @mixin text-area {
@@ -167,4 +250,14 @@
   padding: 15px;
   border: none;
   resize: none;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: $black-color;
+  }
 }

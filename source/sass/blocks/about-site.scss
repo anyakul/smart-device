@@ -20,6 +20,7 @@
 
 .about-site__link {
   @include footer-list-item;
+  @include black-link;
 }
 
 @media (max-width: $tablet-width) {

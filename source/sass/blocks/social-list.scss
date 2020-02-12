@@ -8,6 +8,19 @@
   margin-right: 20px;
 }
 
+.social-list__item svg {
+  color: #cdcdcd;
+
+  &:hover {
+    color: #8a8a8a;
+  }
+
+  &:active,
+  &:focus {
+    color: #dbdbdb;
+  }
+}
+
 .social-list__item:last-child {
   margin-right: 0;
 }

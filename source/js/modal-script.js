@@ -1,39 +1,37 @@
-var link = document.querySelector(".contacts__button");
-var closeButton = document.querySelector(".popup__button");
-var popup = document.querySelector(".popup");
-var sendButton = document.querySelector(".popup-form");
+'use strict';
 
-var closePopup = function() {
-  popup.classList.remove("popup--show");
-}
+var link = document.querySelector('.contacts__button');
+var closeButton = document.querySelector('.popup__button');
+var popup = document.querySelector('.popup');
+var sendButton = document.querySelector('.popup-form');
 
-link.addEventListener("click", function() {
-  popup.classList.add("popup--show");
-})
-
-closeButton.addEventListener("click", function() {
-  closePopup();
-})
-
-var isNotTextBlock = function (evt) {
-  return popup.indexOf(evt.target.className) === -1;
+var closePopup = function () {
+  popup.classList.remove('popup--show');
 };
 
-document.addEventListener("click", function(evt) {
-  if (evt.target !== popup) {
-      closePopup();
-    }
-})
+link.addEventListener('click', function () {
+  popup.classList.add('popup--show');
+});
 
-sendButton.addEventListener("submit", function(evt) {
+closeButton.addEventListener('click', function () {
+  closePopup();
+});
+
+document.addEventListener('click', function (evt) {
+  if (evt.target !== popup) {
+    closePopup();
+  }
+});
+
+sendButton.addEventListener('submit', function (evt) {
   evt.preventDefault();
   closePopup();
-})
+});
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popup.classList.contains("popup--show")) {
+    if (popup.classList.contains('popup--show')) {
       closePopup();
     }
   }

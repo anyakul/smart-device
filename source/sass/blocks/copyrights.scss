@@ -12,6 +12,7 @@
 .copyrights__item,
 .copyrights__info {
   @include footer-copyrights;
+  @include black-link;
 }
 
 @media (max-width: $tablet-width) {
