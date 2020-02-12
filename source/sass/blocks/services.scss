@@ -29,69 +29,32 @@
   padding-left: 50px;
   padding-right: 10px;
   min-height: 400px;
-  width: 25%;
+  width: 24%;
   background-size: 100%;
   background-color: transparent;
   margin-bottom: 20px;
-  z-index: 20;
-}
-
-.services__item--production::before {
-  content: "Производство печатных плат";
-  opacity: 1;
-  top: 40px;
-  left: 40px;
-  position: absolute;
-  z-index: 1;
 }
 
 .services__info {
+  position: absolute;
   color: $white-color;
-  opacity: 1;
   font-size: 20px;
-  font-weight: bold;
-}
-
-.services__item--production::after {
-  content: "";
-  background-image: url("../../img/producing.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1;
-}
-
-.services__item--mounting::after {
-  content: "";
-  background-image: url("../../img/mounting.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
 
 .services__item--parts::after {
-  content: "";
+  @include picture-after;
   background-image: url("../../img/parts.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: 0;
+}
+
+.services__item--production::after {
+  @include picture-after;
+  background-image: url("../../img/producing.png");
+}
+
+.services__item--mounting::after {
+  @include picture-after;
+  background-image: url("../../img/mounting.png");
 }
 
 @media (max-width: $tablet-width) {

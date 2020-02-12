@@ -39,6 +39,7 @@
 }
 
 @mixin page-size {
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -136,4 +137,17 @@
     border: none;
     background-repeat: no-repeat;
   }
+}
+
+@mixin picture-after {
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 5;
 }

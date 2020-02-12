@@ -16,7 +16,7 @@
 
 .header__menu {
   @include flex-row;
-  width: 70%;
+  min-width: 70%;
 }
 
 .header__navigation {
@@ -24,7 +24,7 @@
 }
 
 .header__contacts {
-  width: 90%;
+  min-width: 80%;
 }
 
 .header__promo {
@@ -37,7 +37,7 @@
   }
 
   .header__menu {
-    width: 150px;
+    min-width: 150px;
   }
 
   .header__navigation {
@@ -45,7 +45,7 @@
   }
 
   .header__contacts {
-    width: 90px;
+    min-width: 90px;
   }
 }
 

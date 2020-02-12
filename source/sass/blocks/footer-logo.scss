@@ -1,5 +1,6 @@
 .footer-logo {
   @include flex-row;
+  justify-content: space-around;
   margin-bottom: 30px;
 }
 
