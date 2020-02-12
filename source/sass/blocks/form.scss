@@ -9,17 +9,13 @@
 }
 
 .form__item-input {
-  border: none;
-  padding: 5%;
-  padding-right: 0%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 30px;
-  width: 95%;
-  color: $white-color;
+  @include input;
+  margin-bottom: 20px;
 }
 
 .form__item-input [placeholder] {
   color: $white-color;
+  @include main-text;
 }
 
 .form__item--name,
@@ -27,18 +23,12 @@
   width: 48%;
 }
 
-
 .form__item--question {
   width: 94%;
 }
 
 .form__area {
-  color: $white-color;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  padding: 15px;
-  border: none;
-  resize: none;
+  @include text-area;
   margin-bottom: 30px;
 }
 
