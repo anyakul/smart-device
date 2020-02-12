@@ -26,6 +26,8 @@
   .footer-logo {
     @include flex-row;
     justify-content: space-around;
+    width: 280px;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
 }

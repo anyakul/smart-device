@@ -1,5 +1,26 @@
 .social-list {
   @include flex-row;
   @include cancel;
-  width: 3px;
+  width: 130px;
+}
+
+.social-list__item {
+  margin-right: 20px;
+}
+
+.social-list__item:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .social-list {
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social-list {
+    justify-content: space-around;
+    margin: 0 auto;
+  }
 }

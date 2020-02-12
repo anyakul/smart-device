@@ -5,17 +5,20 @@
 
 .stay__container {
   @include page-size;
+  background-image: url("../../img/paper_airplane.png");
+  background-position: 80px 80px;
+  background-repeat: no-repeat;
+  background-size: 380px 200px;
 }
 
 .stay__wrapper {
   @include container;
-  @include flex-row;
   margin-top: 90px;
-  color: $white-color;
 }
 
 .stay__forms {
-  width: 60%;
+  width: 50%;
+  margin-left: 50%;
 }
 
 .stay-icon {
@@ -25,11 +28,13 @@
 .stay__header {
   @include main-header;
   font-weight: normal;
+  color: $white-color;
 }
 
 .stay__text {
   @include main-text;
   margin-bottom: 30px;
+  color: $white-color;
 }
 
 @media (max-width: $tablet-width) {
@@ -37,7 +42,12 @@
     display: none;
   }
 
+  .stay__container {
+    background-image: none;
+  }
+
   .stay__forms {
     width: 100%;
+    margin-left: 0;
   }
 }

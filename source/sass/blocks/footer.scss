@@ -64,6 +64,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
   .footer__left-wrapper {
     @include flex-column;
   }
@@ -78,6 +82,7 @@
 
   .footer__copyrights-tablet {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .footer__about-site {
