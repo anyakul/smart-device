@@ -5,7 +5,7 @@
   background-image: url("../../img/motherboard.png");
   background-size: 700px 500px;
   background-repeat: no-repeat;
-  background-position: left calc(50% + 352px) top 0;
+  background-position: left calc(50% + 400px) top 0;
 }
 
 .promo__title {
@@ -57,29 +57,45 @@
   .promo__icon svg {
     width: 33px;
   }
+  
+  .promo {
+    margin-left: 45px;
+    background-size: 465px 340px;
+    background-position: left calc(50% + 340px) top 0;
+    padding-bottom: 160px;
+  }
 
   .promo__title {
     font-size: 60px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    width: 50%;
   }
 
   .promo__button {
-    margin-left: 50px;
+    margin-left: 90px;
   }
 
   .promo__description {
     font-size: 18px;
+    margin-left: 45px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .promo {
+    @include page-size;
     padding-bottom: 30px;
-    background-size: 100% 300px;
+    background-size: 300px 220px;
     background-position: center top;
+    margin-left: 0;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .promo__title {
-    margin-top: 220px;
+    margin-top: 120px;
+    margin-left: 0;
     font-size: 40px;
   }
 
@@ -87,11 +103,14 @@
     margin-bottom: 30px;
     width: 100%;
     font-size: 16px;
+    line-height: 26px;
+    margin-left: 0;
   }
 
   .promo__button {
     width: 100%;
-    margin: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
   }
 
   .promo__button--desktop {

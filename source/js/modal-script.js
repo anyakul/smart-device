@@ -17,12 +17,6 @@ closeButton.addEventListener('click', function () {
   closePopup();
 });
 
-document.addEventListener('click', function (evt) {
-  if (evt.target !== popup) {
-    closePopup();
-  }
-});
-
 sendButton.addEventListener('submit', function (evt) {
   evt.preventDefault();
   closePopup();

@@ -13,9 +13,9 @@
   margin-bottom: 20px;
 }
 
-.form__item-input [placeholder] {
+.form__item-input::placeholder {
   @include main-text;
-  color: $white-color;
+ // color: $white-color;
 }
 
 .form__item--name,

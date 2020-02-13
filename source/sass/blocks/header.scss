@@ -7,7 +7,7 @@
 .header__wrapper {
   @include page-size;
   @include flex-row;
-  margin-bottom: 40px;
+  margin-bottom: 150px;
   padding-top: 40px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .header__contacts {
-  min-width: 80%;
+  min-width: 65%;
 }
 
 .header__promo {
@@ -29,8 +29,14 @@
 }
 
 @media (max-width: $tablet-width) {
+
+.header {
+  width: 100%;
+}
   .header__wrapper {
     padding-top: 25px;
+    margin-bottom: 50px;
+    
   }
 
   .header__menu {
@@ -43,6 +49,9 @@
 }
 
 @media (max-width: $mobile-width) {
+  .header__wrapper {
+    margin-bottom: 20px;
+  }
   .header__logo {
     width: 50px;
   }
