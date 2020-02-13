@@ -1,6 +1,6 @@
 .about-company {
   @include page-size;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .about-company__wrapper {
@@ -21,11 +21,15 @@
 .about-company__button {
   @include button-text;
   @include blue-border-button;
-  padding: 15px 40px;
+  padding: 15px 50px;
 }
 
 @media (max-width: $mobile-width) {
   .about-company__icon {
     display: none;
+  }
+
+  .about-company {
+    margin-bottom: 60px;
   }
 }

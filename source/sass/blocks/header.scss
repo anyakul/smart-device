@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
   background-color: $header-bg-color;
   background-image: url("../../img/background.png");
 }
@@ -29,14 +29,14 @@
 }
 
 @media (max-width: $tablet-width) {
+  .header {
+    width: 100%;
+    margin-bottom: 60px;
+  }
 
-.header {
-  width: 100%;
-}
   .header__wrapper {
     padding-top: 25px;
     margin-bottom: 50px;
-    
   }
 
   .header__menu {
@@ -49,9 +49,15 @@
 }
 
 @media (max-width: $mobile-width) {
+  .header {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
   .header__wrapper {
     margin-bottom: 20px;
   }
+
   .header__logo {
     width: 50px;
   }

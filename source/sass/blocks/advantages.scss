@@ -1,6 +1,6 @@
 .advantages {
   @include page-size;
-  margin-bottom: 110px;
+  margin-bottom: 15px;
 }
 
 .advantages__list {
@@ -12,7 +12,7 @@
 
 .advantages__item {
   position: relative;
-  width: 43%;
+  width: 44%;
   margin-bottom: 20px;
   padding-top: 100px;
   padding-left: 30px;
@@ -70,16 +70,30 @@
 
 @media (max-width: $tablet-width) {
   .advantages__item {
-    padding-left: 25px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 41%;
+  }
+
+  .advantages__title {
+    font-size: 20px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .advantages__item {
     width: 100%;
+    padding-top: 70px;
+    padding-right: 5px;
+    padding-left: 20px;
+    padding-bottom: 30px;
   }
 
   .advantages__title {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 }
