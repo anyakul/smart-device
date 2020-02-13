@@ -4,6 +4,7 @@ var link = document.querySelector('.contacts__button');
 var closeButton = document.querySelector('.popup__button');
 var popup = document.querySelector('.popup');
 var sendButton = document.querySelector('.popup-form');
+var userName = popup.querySelector('[name=user-name]');
 
 var closePopup = function () {
   popup.classList.remove('popup--show');
@@ -11,6 +12,7 @@ var closePopup = function () {
 
 link.addEventListener('click', function () {
   popup.classList.add('popup--show');
+  userName.focus();
 });
 
 closeButton.addEventListener('click', function () {

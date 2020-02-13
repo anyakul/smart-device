@@ -74,14 +74,14 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: #2b6cc4;
+    background-color: $light-blue-color;
     color: #dbdbdb;
     border: none;
   }
 
   &:active,
   &:focus {
-    background-color: #0b3161;
+    background-color: $active-blue-color;
     color: #8a8a8a;
     border: none;
   }
@@ -94,14 +94,14 @@
   border: 1px solid $blue-color;
 
   &:hover {
-    border: 1px solid #2b6cc4;
-    color: #2b6cc4;
+    border: 1px solid $light-blue-color;
+    color: $light-blue-color;
   }
 
   &:active,
   &:focus {
-    border: 1px solid #0b3161;
-    color: #0b3161;
+    border: 1px solid $active-blue-color;
+    color: $active-blue-color;
   }
 }
 
