@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   margin: 0 auto;
   padding-bottom: 280px;
   color: $white-color;
@@ -23,6 +24,19 @@
   font-family: $roboto-mono-regular-font;
   font-size: 22px;
   line-height: 34px;
+}
+
+.promo__button-scroll {
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  transform: rotate(-90deg);
+  margin-left: 0;
+  margin-top: 40px;
+  background-color: transparent;
+  border: none;
+  color: $white-color;
+  opacity: 0.5;
 }
 
 .promo__icon {
@@ -56,6 +70,10 @@
 @media (max-width: $tablet-width) {
   .promo__icon svg {
     width: 33px;
+  }
+  
+  .promo__button-scroll {
+    display: none;
   }
 
   .promo {

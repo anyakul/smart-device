@@ -18,10 +18,12 @@
 .header__menu {
   @include flex-row;
   min-width: 70%;
+  align-items: center;
 }
 
 .header__contacts {
   min-width: 65%;
+  align-items: center;
 }
 
 .header__promo {

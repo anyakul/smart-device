@@ -6,12 +6,15 @@
 
 .contacts__item {
   margin-right: 20px;
-  padding-top: 10px;
   font-family: $pt-mono-regular-font;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.contacts__item--order-call {
+  
 }
 
 .contacts__item a {

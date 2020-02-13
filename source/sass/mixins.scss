@@ -51,6 +51,8 @@
   color: $white-color;
   background-color: transparent;
   border: 1px solid $white-color;
+  border-radius: 5px;
+  cursor: pointer;
 
   &:hover {
     color: #dbdbdb;
@@ -70,8 +72,10 @@
   background-color: $blue-color;
   font-size: 1rem;
   border: none;
+  border-radius: 5px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover {
     background-color: $light-blue-color;
@@ -88,10 +92,13 @@
 }
 
 @mixin blue-border-button {
+  cursor: pointer;
   @include button-text;
   color: $blue-color;
   background-color: $white-color;
   border: 1px solid $blue-color;
+  border-radius: 5px;
+  cursor: pointer;
 
   &:hover {
     border: 1px solid $light-blue-color;
@@ -106,6 +113,7 @@
 }
 
 @mixin white-link {
+  cursor: pointer;
   &:hover {
     color: #dbdbdb;
   }
@@ -171,6 +179,7 @@
   font-family: $pt-mono-regular-font;
   font-size: 0.9375rem;
   color: $header-bg-color;
+  opacity: 0.5;
   font-weight: normal;
   text-decoration: none;
 }
@@ -180,6 +189,7 @@
   font-size: 0.8125rem;
   line-height: 24px;
   color: $header-bg-color;
+  opacity: 0.5;
   font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
@@ -204,6 +214,7 @@
   display: none;
 
   @media (max-width: $mobile-width) {
+    cursor: pointer;
     display: block;
     content: "";
     position: absolute;
@@ -228,6 +239,14 @@
   right: 0;
   position: absolute;
   z-index: 5;
+  
+  &::hover {
+    opacity: 0.3;
+  }
+  
+  &::active {
+    opacity: 0.1;
+  }
 }
 
 @mixin input {
@@ -236,6 +255,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   width: 90%;
   color: $black-color;
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -259,6 +279,7 @@
   padding: 15px;
   border: none;
   resize: none;
+  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
