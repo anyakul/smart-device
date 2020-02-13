@@ -21,14 +21,14 @@
   border: 1px solid $border-color;
   border-left: 3px solid $blue-color;
 
-  &--active {
+  &:active {
     color: $white-color;
     background-color: $blue-color;
     border: none;
   }
 
-  &--active .advantages__title,
-  &--active .advantages__text {
+  &:active .advantages__title,
+  &:active .advantages__text {
     color: $white-color;
     background-color: $blue-color;
     border: none;
@@ -39,9 +39,17 @@
     background-image: url("../img/icon-people.svg");
   }
 
+  &--contractor:active::before {
+    background-image: url("../img/icon-people-active.svg");
+  }
+
   &--price::before {
     @include icon-absolute-position;
     background-image: url("../img/icon-price.svg");
+  }
+
+  &--price:active::before {
+    background-image: url("../img/icon-price-active.svg");
   }
 
   &--detective::before {
@@ -49,8 +57,16 @@
     background-image: url("../img/icon-detective.svg");
   }
 
+  &--detective:active::before {
+    background-image: url("../img/icon-detective-active.svg");
+  }
+
   &--time::before {
     @include icon-absolute-position;
+    background-image: url("../img/icon-clock.svg");
+  }
+
+  &--time:active::before {
     background-image: url("../img/icon-clock-active.svg");
   }
 }
