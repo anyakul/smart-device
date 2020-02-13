@@ -10,11 +10,11 @@
 
 .promo__title {
   margin-bottom: 30px;
-  padding-top: 60px;
+  padding-top: 2rem;
   width: 100%;
   font-family: $roboto-mono-regular-font;
   text-transform: uppercase;
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .promo__description {
@@ -66,7 +66,7 @@
   }
 
   .promo__title {
-    font-size: 60px;
+    font-size: 3.75rem;
     margin-left: 45px;
     margin-bottom: 20px;
     width: 50%;
@@ -95,7 +95,8 @@
   .promo__title {
     margin-top: 120px;
     margin-left: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
+    width: 100%;
   }
 
   .promo__description {
