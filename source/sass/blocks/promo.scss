@@ -37,6 +37,7 @@
   border: none;
   color: $white-color;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .promo__icon {
@@ -71,7 +72,7 @@
   .promo__icon svg {
     width: 33px;
   }
-  
+
   .promo__button-scroll {
     display: none;
   }

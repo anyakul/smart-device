@@ -92,7 +92,6 @@
 }
 
 @mixin blue-border-button {
-  cursor: pointer;
   @include button-text;
   color: $blue-color;
   background-color: $white-color;
@@ -114,6 +113,7 @@
 
 @mixin white-link {
   cursor: pointer;
+
   &:hover {
     color: #dbdbdb;
   }
@@ -239,12 +239,12 @@
   right: 0;
   position: absolute;
   z-index: 5;
-  
-  &::hover {
+
+  &:hover {
     opacity: 0.3;
   }
-  
-  &::active {
+
+  &:active {
     opacity: 0.1;
   }
 }
@@ -255,7 +255,6 @@
   background-color: rgba(255, 255, 255, 0.1);
   width: 90%;
   color: $black-color;
-  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);
@@ -279,7 +278,6 @@
   padding: 15px;
   border: none;
   resize: none;
-  cursor: pointer;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.5);

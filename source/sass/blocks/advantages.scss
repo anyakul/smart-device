@@ -20,7 +20,8 @@
   padding-bottom: 70px;
   border: 1px solid $border-color;
   border-left: 3px solid $blue-color;
-  
+  cursor: pointer;
+
   &:hover {
     color: $white-color;
     background-color: $light-grey;
