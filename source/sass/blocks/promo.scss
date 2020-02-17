@@ -1,19 +1,39 @@
 .promo {
   position: relative;
-  margin: 0 auto;
-  padding-bottom: 280px;
+  //margin: 0 auto;
+  padding-bottom: 270px;
   color: $white-color;
+  
   background-image: url("../../img/motherboard.png");
-  background-size: 700px 500px;
+  background-size: 705px 515px;
   background-repeat: no-repeat;
-  background-position: left calc(50% + 400px) top 0;
+  background-position: left calc(50% + 422px) top 0;
+  z-index: 20;
+}
+/*
+.promo::before {
+  content: "";
+  position: absolute;
+ // right: 10px;
+ // left: 100px;
+  width: 705px;
+  height: 515px;
+  background-image: url("../../img/triangles.svg");
+  background-size: 705px 515px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 40;
+}
+*/
+.promo__wrapper {
+  @include page-size;
 }
 
 .promo__title {
   margin-bottom: 30px;
-  padding-top: 2rem;
+  padding-top: 55px;
   width: 100%;
-  font-family: $roboto-mono-regular-font;
+  font-family: $robotocondensedbold;
   text-transform: uppercase;
   font-size: 5rem;
   line-height: 94px;
@@ -22,7 +42,7 @@
 
 .promo__description {
   @include flex-row;
-  width: 60%;
+  width: 51%;
   font-family: $pt-mono-regular-font;
   font-size: 22px;
   line-height: 34px;
@@ -30,18 +50,18 @@
 
 .promo__button-scroll {
   position: absolute;
+  font-family: $robotocondensedbold;
   left: 0;
   bottom: 100px;
   transform: rotate(-90deg);
   margin-left: 0;
   margin-top: 40px;
-  background-color: transparent;
-  border: none;
   color: $white-color;
   opacity: 0.5;
   cursor: pointer;
   line-height: 16px;
   font-family: $pt-mono-regular-font;
+  text-decoration: none;
 }
 
 .promo__icon {
@@ -55,18 +75,14 @@
   height: 2px;
 }
 
-.promo__text {
-  margin: 0;
-  width: 85%;
-}
-
 .promo__button {
   @include blue-button;
   margin-top: 40px;
   margin-left: 86px;
-  padding: 15px 30px;
+  padding: 21px 48px;
   font-size: 16px;
   line-height: 19px;
+  font-family: $robotocondensedbold;
 }
 
 .promo__button--mobile {
@@ -83,7 +99,7 @@
   }
 
   .promo {
-    margin-left: 45px;
+    margin-left: 20px;
     background-size: 465px 340px;
     background-position: left calc(50% + 340px) top 0;
     padding-bottom: 160px;
@@ -94,6 +110,8 @@
     margin-left: 45px;
     margin-bottom: 20px;
     width: 50%;
+    line-height: 70px;
+    margin-bottom: 30px;
   }
 
   .promo__button {
@@ -103,24 +121,44 @@
   .promo__description {
     font-size: 18px;
     margin-left: 45px;
+    margin-bottom: 18px;
+    line-height: 28px;
+    width: 70%;
   }
+  
+  .promo__button {
+    @include blue-button;
+    margin-top: 40px;
+    margin-left: 95px;
+    padding: 18px 33px;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: $robotocondensedbold;
+  }
+
 }
 
 @media (max-width: $mobile-width) {
   .promo {
-    @include page-size;
+  //  @include page-size;
     padding-bottom: 30px;
     background-size: 300px 220px;
-    background-position: center top;
-    margin: 0 auto;
+    background-position: left top;
+ //   margin: 0 auto;
     width: 100%;
+    
   }
+  /*
+  .promo__wrapper {
+    margin-left
+  }*/
 
   .promo__title {
     margin-top: 120px;
     margin-left: 0;
     font-size: 2.5rem;
     width: 100%;
+    margin-left: 0;
   }
 
   .promo__description {

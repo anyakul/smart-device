@@ -7,7 +7,7 @@
 .header__wrapper {
   @include page-size;
   @include flex-row;
-  margin-bottom: 150px;
+  margin-bottom: 170px;
   padding-top: 35px;
 }
 
@@ -26,19 +26,15 @@
   align-items: center;
 }
 
-.header__promo {
-  @include page-size;
-}
-
 @media (max-width: $tablet-width) {
   .header {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .header__wrapper {
     padding-top: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .header__menu {
@@ -58,7 +54,7 @@
 
   .header__wrapper {
     padding-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
 
   .header__logo {
