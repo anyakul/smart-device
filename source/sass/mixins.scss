@@ -20,6 +20,7 @@
 @mixin main-header {
   font-size: 2.25rem;
   font-family: $roboto-mono-bold-font;
+  color: $black-color;
   line-height: 51px;
   font-weight: normal;
 
@@ -34,6 +35,7 @@
 
 @mixin main-text {
   font-size: 16px;
+  color: $black-color;
   font-family: $pt-mono-regular-font;
   line-height: 22px;
 }
@@ -173,6 +175,7 @@
   font-family: $roboto-mono-regular-font;
   font-size: 0.9375rem;
   text-transform: uppercase;
+  color: $header-bg-color;
 }
 
 @mixin footer-list-item {
