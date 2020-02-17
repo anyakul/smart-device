@@ -3,17 +3,13 @@
   cursor: pointer;
 }
 
-.logo__icon {
-  margin-right: 10px;
-}
-
 .logo__text {
   @include flex-column;
-  margin-left: 15px;
 }
 
 .logo__header {
   @include logo-header;
+  font-family: $robotocondensedbold;
   color: $white-color;
 }
 
@@ -24,5 +20,10 @@
 @media (max-width: $mobile-width) {
   .logo__text {
     display: none;
+  }
+  
+  .logo__icon {
+    height: 38px;
+    width: 38px;
   }
 }

@@ -3,7 +3,7 @@
 }
 
 @mixin page-size {
-  max-width: 1400px;
+  max-width: 1411px;
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -17,9 +17,22 @@
   }
 }
 
+@mixin visually-hiddens {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @mixin main-header {
   font-size: 2.25rem;
-  font-family: $roboto-mono-bold-font;
+  font-family: $roboto-mono-regular-font;
   color: $black-color;
   line-height: 51px;
   font-weight: normal;
@@ -297,4 +310,8 @@
     background-color: rgba(255, 255, 255, 0.9);
     color: $black-color;
   }
+}
+
+.visually-hidden {
+  @include visually-hiddens;
 }

@@ -3,3 +3,9 @@
   background: transparent;
   border: none;
 }
+
+@media (max-width: $tablet-width) {
+  .navigation__toggle {
+    margin-top: 0;
+  }
+}

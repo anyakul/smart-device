@@ -23,7 +23,7 @@
 .promo__description {
   @include flex-row;
   width: 60%;
-  font-family: $roboto-mono-regular-font;
+  font-family: $pt-mono-regular-font;
   font-size: 22px;
   line-height: 34px;
 }
@@ -40,6 +40,8 @@
   color: $white-color;
   opacity: 0.5;
   cursor: pointer;
+  line-height: 16px;
+  font-family: $pt-mono-regular-font;
 }
 
 .promo__icon {
@@ -64,6 +66,7 @@
   margin-left: 86px;
   padding: 15px 30px;
   font-size: 16px;
+  line-height: 19px;
 }
 
 .promo__button--mobile {
