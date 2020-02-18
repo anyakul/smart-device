@@ -71,7 +71,7 @@
     background-image: url("../img/icon-clock.svg");
   }
 
-  &--time:active::before {
+  &--time:hover::before {
     background-image: url("../img/icon-clock-active.svg");
   }
 }
