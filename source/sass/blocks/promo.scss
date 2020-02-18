@@ -8,7 +8,7 @@
   
   
 }
- 
+ /*
    .promo::after {
   content: "";
   position: absolute;
@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
    background-position: left calc(50% + 422px) top 0;
    z-index: 50;
-}  
+}  */
 
 .promo__wrapper {
   @include page-size;
@@ -66,7 +66,7 @@
   position: absolute;
   font-family: $robotocondensedbold;
   left: 0;
-  bottom: 100px;
+  top: 400px;
   transform: rotate(-90deg);
   margin-left: 0;
   margin-top: 40px;
@@ -117,6 +117,7 @@
     background-size: 465px 340px;
     background-position: left calc(50% + 340px) top 0;
     padding-bottom: 160px;
+    margin-bottom: 55px;
   }
 
   .promo__title {
@@ -155,12 +156,13 @@
 @media (max-width: $mobile-width) {
   .promo {
   //  @include page-size;
-    padding-bottom: 30px;
+    padding-bottom: 17px;
     background-size: 300px 220px;
     background-position: left top;
  //   margin: 0 auto;
     width: 100%;
-    
+    margin-left: 0;
+    margin-bottom: 20px;
   }
   /*
   .promo__wrapper {
@@ -168,15 +170,16 @@
   }*/
 
   .promo__title {
-    margin-top: 120px;
-    margin-left: 0;
+    margin-top: 140px;
+   // margin-left: 0;
     font-size: 2.5rem;
+    line-height: 47px;
     width: 100%;
     margin-left: 0;
   }
 
   .promo__description {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     width: 100%;
     font-size: 16px;
     line-height: 26px;
@@ -186,7 +189,9 @@
   .promo__button {
     width: 100%;
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+    padding: 17px;
+    margin-top: 30px;
   }
 
   .promo__button--desktop {

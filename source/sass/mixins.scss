@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 80%;
+    width: 86%;
   }
 }
 
@@ -32,7 +32,7 @@
 
 @mixin main-header {
   font-size: 2.25rem;
-  font-family: $roboto-mono-regular-font;
+  font-family: $robotocondensedbold;
   color: $black-color;
   line-height: 51px;
   font-weight: normal;
@@ -159,13 +159,20 @@
   justify-content: space-between;
 }
 
+@mixin flex-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
 }
 
 @mixin container {
-  width: 84%;
+  width: 83%;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
