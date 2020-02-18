@@ -27,14 +27,13 @@
   &:hover {
     color: $white-color;
     background-color: $blue-color;
-    border: none;
+    border: 1px solid $blue-color;
   }
 
   &:hover .advantages__title,
   &:hover .advantages__text {
     color: $white-color;
     background-color: $blue-color;
-    border: none;
   }
 
   &--contractor::before {
@@ -54,6 +53,7 @@
 
   &--price:hover::before {
     background-image: url("../img/icon-price-active.svg");
+    border: 1px solid $blue-color;
   }
 
   &--detective::before {
@@ -63,6 +63,7 @@
 
   &--detective:hover::before {
     background-image: url("../img/icon-detective-active.svg");
+    border: 1px solid $blue-color;
   }
 
   &--time::before {
