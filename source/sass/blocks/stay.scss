@@ -1,5 +1,5 @@
 .stay {
-  padding-bottom: 30px;
+  padding-bottom: 120px;
   background-color: $blue-color;
 }
 
@@ -29,7 +29,7 @@
 
 .stay__text {
   @include main-text;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   color: $white-color;
 }
 

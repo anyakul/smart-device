@@ -1,11 +1,15 @@
 .about-company {
   @include page-size;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .about-company__wrapper {
   @include container;
   @include flex-row;
+}
+
+.about-company__explanation {
+  width: 80%;
 }
 
 .about-company__header {
@@ -25,12 +29,16 @@
   margin-top: 15px;
 }
 
+.about-company__icon {
+   max-height: 100%;
+  }
+
 @media (max-width: $mobile-width) {
   .about-company__icon {
     display: none;
   }
 
   .about-company {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }

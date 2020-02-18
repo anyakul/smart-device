@@ -10,11 +10,12 @@
 
 .form__item-input {
   @include input;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .form__item-input::placeholder {
   @include main-text;
+  color: white;
 }
 
 .form__item--name,
@@ -28,7 +29,8 @@
 
 .form__area {
   @include text-area;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  height: 120px;
 }
 
 .form__buttons {
@@ -41,13 +43,13 @@
 .form__button {
   @include white-button;
   padding: 5px;
-  width: 40%;
+  width: 50%;
 }
 
 .form__label {
   @include white-link;
   font-family: $pt-mono-regular-font;
-  width: 50%;
+  width: 46%;
   opacity: 0.8;
   letter-spacing: 0.05em;
 }
@@ -62,6 +64,10 @@
 @media (max-width: $mobile-width) {
   .form__buttons {
     @include flex-column;
+  }
+  
+  .form__button {
+    margin-bottom: 30px;
   }
 
   .form__button,

@@ -96,7 +96,12 @@
     padding-top: 65px;
     padding-bottom: 20px;
     max-width: 40%;
-    min-height: 100px;
+    min-height: 225px;
+  }
+  
+  .advantages {
+    @include page-size;
+    margin-bottom: 30px;
   }
 
   .advantages__title {
