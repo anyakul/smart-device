@@ -24,18 +24,12 @@
 
   &:hover {
     color: $white-color;
-    background-color: $light-grey;
-    border: none;
-  }
-
-  &:active {
-    color: $white-color;
     background-color: $blue-color;
     border: none;
   }
 
-  &:active .advantages__title,
-  &:active .advantages__text {
+  &:hover .advantages__title,
+  &:hover .advantages__text {
     color: $white-color;
     background-color: $blue-color;
     border: none;
@@ -46,7 +40,7 @@
     background-image: url("../img/icon-people.svg");
   }
 
-  &--contractor:active::before {
+  &--contractor:hover::before {
     background-image: url("../img/icon-people-active.svg");
   }
 
@@ -55,7 +49,7 @@
     background-image: url("../img/icon-price.svg");
   }
 
-  &--price:active::before {
+  &--price:hover::before {
     background-image: url("../img/icon-price-active.svg");
   }
 
@@ -64,7 +58,7 @@
     background-image: url("../img/icon-detective.svg");
   }
 
-  &--detective:active::before {
+  &--detective:hover::before {
     background-image: url("../img/icon-detective-active.svg");
   }
 

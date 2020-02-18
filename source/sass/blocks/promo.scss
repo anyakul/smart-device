@@ -1,30 +1,44 @@
 .promo {
   position: relative;
-  //margin: 0 auto;
+  margin: 0 auto;
   padding-bottom: 270px;
   color: $white-color;
+
+//  background-color: pink;
   
-  background-image: url("../../img/motherboard.png");
-  background-size: 705px 515px;
-  background-repeat: no-repeat;
-  background-position: left calc(50% + 422px) top 0;
-  z-index: 20;
+  
 }
-/*
-.promo::before {
+ 
+   .promo::after {
   content: "";
   position: absolute;
- // right: 10px;
- // left: 100px;
-  width: 705px;
-  height: 515px;
+  top: -255px;
+  left: -150px;
+  width: 1920px;
+  height: 881px; 
+                                   //  background-color: grey;
   background-image: url("../../img/triangles.svg");
+ // background-size: 705px 515px;
+  background-repeat: no-repeat;
+  background-position:  50% 50%;
+ // z-index: 30;
+}  
+
+  .promo::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  width: 1600px;
+  height: 700px; 
+//  background-color: grey;
+  background-image: url("../../img/motherboard.png");  
   background-size: 705px 515px;
   background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 40;
-}
-*/
+   background-position: left calc(50% + 422px) top 0;
+   z-index: 50;
+}  
+
 .promo__wrapper {
   @include page-size;
 }
