@@ -45,8 +45,8 @@
 }
 
 .form__label {
-  font-family: $pt-mono-regular-font;
   @include white-link;
+  font-family: $pt-mono-regular-font;
   width: 50%;
   opacity: 0.8;
   letter-spacing: 0.05em;

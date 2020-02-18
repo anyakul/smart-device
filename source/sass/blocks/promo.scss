@@ -4,35 +4,34 @@
   padding-bottom: 270px;
   color: $white-color;
 
-//  background-color: pink;
-  
-  
+  //  background-color: pink;
 }
- /*
-   .promo::after {
+
+/*
+.promo::after {
   content: "";
   position: absolute;
   top: -255px;
   left: -150px;
   width: 1920px;
-  height: 881px; 
+  height: 881px;
                                    //  background-color: grey;
   background-image: url("../../img/triangles.svg");
  // background-size: 705px 515px;
   background-repeat: no-repeat;
   background-position:  50% 50%;
  // z-index: 30;
-}  
+}
 
-  .promo::before {
+.promo::before {
   content: "";
   position: absolute;
   top: -10px;
   left: -30px;
   width: 1600px;
-  height: 700px; 
+  height: 700px;
 //  background-color: grey;
-  background-image: url("../../img/motherboard.png");  
+  background-image: url("../../img/motherboard.png");
   background-size: 705px 515px;
   background-repeat: no-repeat;
    background-position: left calc(50% + 422px) top 0;
@@ -64,7 +63,6 @@
 
 .promo__button-scroll {
   position: absolute;
-  font-family: $robotocondensedbold;
   left: 0;
   top: 400px;
   transform: rotate(-90deg);
@@ -123,14 +121,9 @@
   .promo__title {
     font-size: 3.75rem;
     margin-left: 45px;
-    margin-bottom: 20px;
     width: 50%;
     line-height: 70px;
     margin-bottom: 30px;
-  }
-
-  .promo__button {
-    margin-left: 90px;
   }
 
   .promo__description {
@@ -140,7 +133,7 @@
     line-height: 28px;
     width: 70%;
   }
-  
+
   .promo__button {
     @include blue-button;
     margin-top: 40px;
@@ -150,20 +143,20 @@
     line-height: 19px;
     font-family: $robotocondensedbold;
   }
-
 }
 
 @media (max-width: $mobile-width) {
   .promo {
-  //  @include page-size;
+    //  @include page-size;
     padding-bottom: 17px;
     background-size: 300px 220px;
     background-position: left top;
- //   margin: 0 auto;
+    //   margin: 0 auto;
     width: 100%;
     margin-left: 0;
     margin-bottom: 20px;
   }
+
   /*
   .promo__wrapper {
     margin-left
@@ -171,7 +164,7 @@
 
   .promo__title {
     margin-top: 140px;
-   // margin-left: 0;
+    // margin-left: 0;
     font-size: 2.5rem;
     line-height: 47px;
     width: 100%;
