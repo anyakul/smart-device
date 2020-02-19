@@ -47,10 +47,37 @@
   }
 
   &--production::after {
-    @include picture-after;
+    content: "";
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 5;
     background-image: url("../../img/producing.png");
     background-size: cover;
   }
+    &::after:hover {
+      opacity: 0.3;
+    }
+
+    &::after:active {
+      opacity: 0.1;
+    }
+    
+    
+    
+  
+  /*&:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }*/
 }
 
 .services__button {

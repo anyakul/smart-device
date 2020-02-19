@@ -40,6 +40,7 @@
 
 .promo__wrapper {
   @include page-size;
+  height: 100%;
 }
 
 .promo__title {
@@ -95,6 +96,8 @@
   font-size: 16px;
   line-height: 19px;
   font-family: $robotocondensedbold;
+  display: inline-block;
+  text-align: center;
 }
 
 .promo__button--mobile {
@@ -180,7 +183,7 @@
   }
 
   .promo__button {
-    width: 100%;
+    width: 95%;
     margin-left: 0;
     margin-bottom: 55px;
     padding: 17px;
@@ -192,6 +195,6 @@
   }
 
   .promo__button--mobile {
-    display: block;
+    display: inline-block;
   }
 }
