@@ -1,10 +1,10 @@
 .about-site {
-  width: 45%;
+  width: 43%;
 }
 
 .about-site__title {
   @include footer-title;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .about-site__toggle {
@@ -16,20 +16,26 @@
   @include flex-row;
   flex-wrap: wrap;
   text-align: left;
+  list-style-position: inside;
 }
 
-.about-site__item {
-  width: 50%;
+.about-site__list-left {
+  @include cancel;
+}
+
+.about-site__list-right {
+  @include cancel;
 }
 
 .about-site__link {
   @include footer-list-item;
   @include black-link;
+  
 }
 
 @media (max-width: $tablet-width) {
-  .about-site__item {
-    width: 100%;
+  .about-site__list {
+    @include flex-column;
   }
 }
 
@@ -39,6 +45,11 @@
     position: relative;
     border-bottom: 1px solid #626962;
     width: 100%;
+  }
+  
+  
+  .about-site__list {
+    @include flex-column;
   }
 
   .about-site--closed .about-site__list {

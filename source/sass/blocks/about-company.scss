@@ -9,7 +9,7 @@
 }
 
 .about-company__explanation {
-  width: 80%;
+  width: 85%;
 }
 
 .about-company__header {
@@ -32,6 +32,25 @@
 .about-company__icon {
    max-height: 100%;
   }
+
+@media (max-width: $tablet-width) {
+  .about-company__explanation {
+    width: 74%;
+  }
+  .about-company__icon {
+    width: 137px;
+  }
+  
+  .about-company__text {
+    @include main-text;
+    margin-bottom: 22px;
+  }
+  
+  .about-company {
+    @include main-text;
+    margin-bottom: 70px;
+  }
+}
 
 @media (max-width: $mobile-width) {
   .about-company__icon {

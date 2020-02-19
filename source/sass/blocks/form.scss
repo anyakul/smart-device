@@ -10,7 +10,7 @@
 
 .form__item-input {
   @include input;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .form__item-input::placeholder {
@@ -29,7 +29,7 @@
 
 .form__area {
   @include text-area;
-  margin-bottom: 35px;
+  margin-bottom: 44px;
   height: 120px;
 }
 
@@ -42,14 +42,28 @@
 
 .form__button {
   @include white-button;
-  padding: 5px;
-  width: 50%;
+  padding: 15px;
+  width: 46%;
 }
+
+abel:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #aaa;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
 
 .form__label {
   @include white-link;
   font-family: $pt-mono-regular-font;
-  width: 46%;
+  width: 47%;
   opacity: 0.8;
   letter-spacing: 0.05em;
 }
@@ -60,7 +74,20 @@
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
 }
-
+@media (max-width: $tablet-width) {
+  .form__item-input {
+    @include input;
+    margin-bottom: 38px;
+  }
+  
+  .form__area {
+    margin-bottom: 40px;
+  }
+  
+  .form__button {
+    width: 47%;
+  }
+}
 @media (max-width: $mobile-width) {
   .form__buttons {
     @include flex-column;
@@ -69,6 +96,8 @@
   .form__button {
     margin-bottom: 30px;
   }
+  
+  
 
   .form__button,
   .form__label,

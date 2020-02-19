@@ -1,5 +1,5 @@
 .stay {
-  padding-bottom: 120px;
+  padding-bottom: 110px;
   background-color: $blue-color;
 }
 
@@ -17,29 +17,51 @@
 }
 
 .stay__forms {
-  width: 50%;
-  margin-left: 50%;
+  width: 49%;
+  margin-left: 52%;
 }
 
 .stay__header {
   @include main-header;
   font-weight: normal;
   color: $white-color;
+  margin-bottom: 10px;
 }
 
 .stay__text {
   @include main-text;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   color: $white-color;
 }
 
 @media (max-width: $tablet-width) {
   .stay__container {
-    background-image: none;
+    background-image: none;margin: auto;
   }
 
   .stay__forms {
-    width: 100%;
+    width: 83%;
+    
     margin-left: 0;
+  }
+  .stay__wrapper {
+    margin-top: 78px;
+    margin-left: 9%;
+  }
+
+  .stay__header {
+    @include main-header;
+    font-weight: normal;
+    color: $white-color;
+    margin-bottom: 15px;
+  }
+  
+  .stay__text {
+    margin-bottom: 52px;
+  }
+  
+  .stay {
+    padding-bottom: 101px;
+    background-color: $blue-color;
   }
 }

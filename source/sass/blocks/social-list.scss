@@ -1,11 +1,11 @@
 .social-list {
   @include flex-row;
   @include cancel;
-  width: 130px;
+  width: 115px;
 }
 
 .social-list__item {
-  margin-right: 20px;
+  margin-right: 16px;
   cursor: pointer;
 }
 
@@ -29,6 +29,7 @@
 @media (max-width: $tablet-width) {
   .social-list {
     text-align: center;
+    padding-top: 18px;
   }
 }
 

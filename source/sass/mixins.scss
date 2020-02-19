@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 86%;
+    width: 92%;
   }
 }
 
@@ -39,6 +39,7 @@
 
   @media (max-width: $tablet-width) {
     font-size: 2rem;
+    line-height: 49px;
   }
 
   @media (max-width: $mobile-width) {
@@ -172,7 +173,7 @@
 }
 
 @mixin container {
-  width: 83%;
+  width: 82%;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -181,7 +182,7 @@
 }
 
 @mixin logo-header {
-  font-family: $roboto-mono-bold-font;
+  font-family: $robotocondensedbold;
   font-weight: bold;
   font-size: 1.5625rem;
   line-height: 29px;
@@ -210,6 +211,7 @@
   letter-spacing: 0.03em;
   font-weight: normal;
   text-decoration: none;
+  line-height: 25px;
 }
 
 @mixin footer-copyrights {
@@ -298,6 +300,10 @@
     @include main-text;
     color: $white-color;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 5%;
+  }
 }
 
 @mixin text-area {
@@ -316,6 +322,10 @@
   &:focus {
     background-color: rgba(255, 255, 255, 0.9);
     color: $black-color;
+  }
+  
+  @media (max-width: $tablet-width) {
+    height: 130px;
   }
 }
 

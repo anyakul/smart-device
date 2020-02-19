@@ -1,7 +1,8 @@
 .footer-logo {
   @include flex-row;
-  justify-content: space-around;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  padding-top: 5px;
   cursor: pointer;
 }
 
@@ -23,10 +24,16 @@
   @include logo-add;
 }
 
+@media (max-width: $tablet-width) {
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .footer-logo {
     width: 280px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }

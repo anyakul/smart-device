@@ -1,13 +1,18 @@
 .copyrights {
   @include page-size;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 15px;
 }
 
-.copyrights__list {
+.copyrights__list,
+.copyrights__left {
   @include cancel;
   @include flex-row;
   flex-wrap: wrap;
+}
+
+.copyrights__left {
+  width: 59%;
 }
 
 .copyrights__item,
@@ -17,7 +22,11 @@
 }
 
 .copyrights__item:last-child {
-  margin-left: 10%;
+  margin-left: 16%;
+}
+
+.copyrights__item:first-child {
+  margin-right: 6%;
 }
 
 @media (max-width: $tablet-width) {
@@ -27,6 +36,10 @@
 
   .copyrights__item--sd {
     display: none;
+  }
+  
+  .copyrights__item:last-child {
+    margin-left: 0;
   }
 }
 
