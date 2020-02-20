@@ -1,0 +1,40 @@
+.popup-mistake {
+  position: fixed;
+  top: 20px;
+  left: 40%;
+  width: 20%;
+  background-color: $white-color;
+  padding: 30px;
+  text-align: center;
+  z-index: 100;
+  border: 10px solid $blue-color;
+  display: none;
+  &--show {
+    display: block;
+  }
+}
+
+.popup-mistake__header {
+  @include main-header;
+  margin-bottom: 30px;
+}
+
+.popup-mistake__button {
+  @include blue-button;
+  padding: 15px;
+}
+
+.popup-mistake--show {
+  display: block;
+}
+
+.popup-mistake__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../../img/icon-close-blue.svg");
+  background-color: $white-color;
+  border: none;
+}

@@ -4,10 +4,16 @@ var link = document.querySelector('.contacts__button');
 var closeButton = document.querySelector('.popup__button');
 var popup = document.querySelector('.popup');
 var sendButton = document.querySelector('.popup-form');
+var popupMistake = document.querySelector('.popup-mistake');
+var popupSuccess = document.querySelector('.popup-success');
 var userName = popup.querySelector('[name=user-name]');
 var phone = popup.querySelector("[name=number]");
 var question = popup.querySelector("[name=question]");
-
+var closeMistakeButton = document.querySelector('.popup-mistake__close-button');
+var popupSuccess = document.querySelector('.popup-success');
+var closeSuccessButton = popupSuccess.querySelector('.popup-success__close-button');
+var successButton = popupSuccess.querySelector('.popup-success__button');
+var mistakeButton = popupMistake.querySelector('.popup-mistake__button');
 var isStorageSupport = true;
 var storage = "";
   
@@ -19,7 +25,7 @@ try {
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();	 
-  popup.classList.add("modal-show");
+  popup.classList.add("popup-show");
     
   if (storage) {
     userName.value = localStorage.getItem("userName");
@@ -30,9 +36,9 @@ link.addEventListener("click", function (evt) {
 	    question.focus();
 	  }
   } else {
-    namem.focus();
+    userName.focus();
   }    
-);
+});
 
 var closePopup = function () {
   popup.classList.remove('popup--show');
@@ -47,22 +53,54 @@ closeButton.addEventListener('click', function () {
   closePopup();
 });
 
+var showMistakeMessage = function() {
+  popupMistake.classList.add("popup-mistake--show");
+  closeMistakeButton.addEventListener('click', function () {
+    popupMistake.classList.remove('popup-mistake--show');
+  });
+  
+  mistakeButton.addEventListener('click', function () {
+    popupMistake.classList.remove('popup-mistake--show');
+    popup.classList.add("popup--show");
+  });
+}
+
 sendButton.addEventListener('submit', function (evt) {
   evt.preventDefault();
- /* if (!userName.value  || !phone.value || !question.value) {
-	  popup.classList.remove("modal-error");
-	  popup.offsetWidth = popup.offsetWidth; 
-    popup.classList.add("modal-error");
-  } else {*/
-      if (isStorageSupport) { 
-        localStorage.setItem("user-name", userName.value);
-		    localStorage.setItem("phone", phone.value);
-	    	localStorage.setItem("question", question.value);
-      }
-   // }
-  
-  closePopup();
-});
+  var phone = validPhone();
+  if (!userName.value || !phone.value) {
+    closePopup();
+	  showMistakeMessage();
+  }
+  else if (userName.value || phone.value) {
+   /* if (!phone) {
+      showMistakeMessage();
+    }
+    /*else if (isStorageSupport) { 
+      localStorage.setItem("user-name", userName.value);
+      localStorage.setItem("phone", phone.value);
+      localStorage.setItem("question", question.value);*/
+      closePopup();
+      popupSuccess.classList.add("popup-success--show");
+      closeSuccessButton.addEventListener('click', function () {
+        popupSuccess.classList.remove('popup-success--show');
+      })
+      successButton.addEventListener('click', function () {
+        popupSuccess.classList.remove('popup-success--show');
+      })
+  //  }
+  }
+})
+
+function validPhone() {
+    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    var myPhone = phone.value;
+    var valid = re.test(myPhone);
+    if (valid) {
+      return true
+    };
+    return false;
+}  
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
