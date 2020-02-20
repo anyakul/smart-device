@@ -1,6 +1,10 @@
 .advantages {
+  width: 100%;
+  background-position: 92% 245px;
+}
+
+.advantages__wrapper {
   @include page-size;
-  margin-bottom: 90px;
 }
 
 .advantages__list {
@@ -19,9 +23,11 @@
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 70px;
+  background-color: $white-color;
   border: 1px solid $border-color;
   border-left: 3px solid $blue-color;
   cursor: pointer;
+  z-index: 10;
 
   &:hover {
     color: $white-color;
@@ -72,6 +78,28 @@
 
   &--time:hover::before {
     background-image: url("../img/icon-clock-active.svg");
+  }
+}
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 100%;
+    background-position: 92% 245px;
+    background-image: url("../../img/background-triangles-right.svg");
+    background-repeat: no-repeat;
+    background-size: 350px 350px;
+    margin-bottom: 90px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 230px;
+      width: 300px;
+      height: 300px;
+      background-image: url("../../img/background-triangles-left.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+    }
   }
 }
 

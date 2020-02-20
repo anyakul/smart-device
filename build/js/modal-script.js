@@ -25,7 +25,7 @@ try {
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();	 
-  popup.classList.add("popup-show");
+  popup.classList.add("popup--show");
     
   if (storage) {
     userName.value = localStorage.getItem("userName");
@@ -47,11 +47,20 @@ var closePopup = function () {
 link.addEventListener('click', function () {
   popup.classList.add('popup--show');
   userName.focus();
+  addEventListeners();
 });
 
 closeButton.addEventListener('click', function () {
   closePopup();
 });
+
+var addEventListeners = function() {
+  document.addEventListener('click', function (evt) {
+    if (evt.target !== popup && !popup.contains(evt.target)) {
+      closePopup();
+    }
+  })
+};
 
 var showMistakeMessage = function() {
   popupMistake.classList.add("popup-mistake--show");
@@ -81,7 +90,7 @@ sendButton.addEventListener('submit', function (evt) {
       localStorage.setItem("phone", phone.value);
       localStorage.setItem("question", question.value);*/
       closePopup();
-      popupSuccess.classList.add("popup-success--show");
+      popupSuccess.classList.add('popup-success--show');
       closeSuccessButton.addEventListener('click', function () {
         popupSuccess.classList.remove('popup-success--show');
       })

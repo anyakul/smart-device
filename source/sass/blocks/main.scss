@@ -1,0 +1,35 @@
+@media (min-width: $desktop-width) {
+.main {
+  position: relative;
+  background-image: url("../../img/background-triangles1.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 432px;
+  background-size: 636px 792px;
+  padding-top: 70px;
+  z-index: 20;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  top: 145px;
+  left: 35%;
+  width: 636px;
+  height: 636px;
+  background-image: url("../../img/background-triangles2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+@media (max-width: $tablet-width) {
+  .main {
+    position: relative;
+    background-image: url("../../img/background-triangles2.svg");
+    background-repeat: no-repeat;
+    background-position: 300px 247px;
+    background-size: 636px 636px;
+    padding-top: 70px;
+    z-index: 20;
+  }
+}
