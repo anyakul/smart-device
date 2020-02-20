@@ -9,3 +9,4 @@ openButton.addEventListener('click', function () {
   hiddenText.classList.remove('visually-hidden');
   dots.classList.add('visually-hidden');
 });
+console.log(hiddenText);

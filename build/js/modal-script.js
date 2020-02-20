@@ -81,7 +81,7 @@ sendButton.addEventListener('submit', function (evt) {
       localStorage.setItem("phone", phone.value);
       localStorage.setItem("question", question.value);*/
       closePopup();
-      popupSuccess.classList.add('popup-success--show');
+      popupSuccess.classList.add("popup-success--show");
       closeSuccessButton.addEventListener('click', function () {
         popupSuccess.classList.remove('popup-success--show');
       })
