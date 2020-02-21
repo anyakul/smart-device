@@ -46,17 +46,53 @@
   width: 46%;
 }
 
-abel:before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  background-color: #aaa;
-  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+.form__label {
+  display: flex;
+  flex-direction: row;
+  
+  &:hover {
+    color: $grey-color;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.form__label-agree {
+  position: relative;
+  margin-left: 20px;
+}
+
+.form__input-checkbox + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.form__input-checkbox:checked + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.form__input-checkbox:focus + label::before,
+.form__input-checkbox:hover + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-off-hover.svg") no-repeat;
+}
+
+.form__input-checkbox:checked:focus + label::before,
+.form__input-checkbox:checked:hover + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-on-hover.svg") no-repeat;
+}
+
+.form__input-checkbox:active + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-off-hover.svg") no-repeat;
+}
+
+.form__input-checkbox:checked:active + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-on-active.svg") no-repeat;
 }
 
 
@@ -68,12 +104,6 @@ abel:before {
   letter-spacing: 0.05em;
 }
 
-.form__input-checkbox {
-  width: 16px;
-  height: 16px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-}
 @media (max-width: $tablet-width) {
   .form__item-input {
     @include input;

@@ -343,6 +343,15 @@
   }
 }
 
+@mixin checkbox {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 23px;
+  height: 23px;
+}
+
 .visually-hidden {
   @include visually-hiddens;
 }
