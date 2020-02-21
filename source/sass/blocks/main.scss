@@ -7,6 +7,10 @@
   }
 }
 
+.main__under-popup {
+  opacity: 0.8;
+}
+
 @media (max-width: $tablet-width) {
   .main {
     background-image: url("../../img/background-tablet.svg");

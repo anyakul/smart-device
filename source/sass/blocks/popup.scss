@@ -1,6 +1,6 @@
 .popup {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 20px;
   background-color: $blue-color;
   z-index: 100;
