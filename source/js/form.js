@@ -14,18 +14,6 @@ try {
    isStorageSupport = false;
 }  
 
-if (storage) {
-  userName.value = localStorage.getItem("user-name");
-  phone.value = localStorage.getItem("phone");
-  if (userName.value) {
-    phone.focus();
-	} else {
-	  question.focus();
-	}
-} else {
-  userName.focus();
-}    
-
 var validatePhone = function() {
   phone.addEventListener('keypress', function (evt) {
     if(!/\d/.test(evt.key)) {
