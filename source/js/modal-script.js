@@ -3,16 +3,16 @@ var link = document.querySelector(".contacts__button");
 var popup = document.querySelector(".popup");
 var popupActive = document.querySelector(".popup--show");
 var close = popup.querySelector(".popup__close"); 
-var form = popup.querySelector("form");
-var namem = popup.querySelector("[name=namem]");
-var email = popup.querySelector("[name=email]");
-var message = popup.querySelector("[name=message]");
+var popupForm = popup.querySelector(".popup-form");
+var userName = popup.querySelector("[name=user-name]");
+var phone = popup.querySelector("[name=phone]");
+var question = popup.querySelector("[name=question]");
   
 var isStorageSupport = true;
 var storage = "";
   
 try {
-   storage = localStorage.getItem("namem");    
+   storage = localStorage.getItem("userName");    
 } catch (err) {
    isStorageSupport = false;
 }  
@@ -21,59 +21,74 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();	 
   popup.classList.add("popup--show");
   addEventListeners();
+  validatePhone();
+
+  if (storage) {
+    userName.value = localStorage.getItem("user-name");
+    phone.value = localStorage.getItem("phone");
+    if (userName.value) {
+  	  phone.focus();
+	  
+	  } else {
+		  question.focus();
+	  }
+  } else {
+    userName.focus();
+  }    
 });
-     /*
-    if (storage) {
-          namem.value = localStorage.getItem("namem");
-	      email.value = localStorage.getItem("email");
-          if (email.value) {
-			  message.focus();
-			  
-		  } else {
-			  email.focus();
-		  }
-    } else {
-      namem.focus();
-    }    
- });
-  */
+
 close.addEventListener("click", function (evt) {
     evt.preventDefault();	
     popup.classList.remove("popup--show");
+    removeEventListeners();
 });
 
-var addEventListeners = function() {
-  document.addEventListener("mouseup", function (evt) {
-    //evt.preventDefault();
-    if (evt.target !== popup && !popup.contains(evt.target)) {                    
-      popup.classList.remove("popup--show");
+var onMouseUp = function (evt) {
+  if (evt.target !== popup && !popup.contains(evt.target)) {                    
+    popup.classList.remove("popup--show");
+  }
+}
+
+var validatePhone = function() {
+  phone.addEventListener('keypress', function (evt) {
+    if(!/\d/.test(evt.key)) {
+      evt.preventDefault();
     }
   });
 }
 
-
-/*
-form.addEventListener("submit", function (evt) {
-  if (!namem.value  || !email.value || !message.value) {
-      evt.preventDefault();
-	  popup.classList.remove("modal-error");
-	  popup.offsetWidth = popup.offsetWidth; 
-      popup.classList.add("modal-error");
+var onSubmit = function (evt) {
+  evt.preventDefault();
+  if (!userName.value || !phone.value || !question.value) {
+    popup.classList.remove("popup--error");
+    popup.offsetWidth = popup.offsetWidth; 
+    popup.classList.add("popup--error");
   } else {
-      if (isStorageSupport) { 
-        localStorage.setItem("namem", namem.value);
-		localStorage.setItem("email", email.value);
-	//	localStorage.setItem("message", message.value);
-      }
+    if (isStorageSupport) { 
+      localStorage.setItem("user-name", userName.value);
+		  localStorage.setItem("phone", phone.value);
+	  	localStorage.setItem("question", question.value);
+      popup.classList.remove("popup--show");
     }
-}); 
- */
-window.addEventListener("keydown", function (evt) {
+  }
+}
+
+var addEventListeners = function() {
+  document.addEventListener("mouseup", onMouseUp);
+  popupForm.addEventListener("submit", onSubmit);
+};
+
+var removeEventListeners = function() {
+  document.removeEventListener("mouseup", onMouseUp);
+  popupForm.removeEventListener("submit", onSubmit);
+};
+
+document.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("popup--show")) {
         popup.classList.remove("popup--show");
+        removeEventListeners();
       }
     }
-}); 
-
+});
