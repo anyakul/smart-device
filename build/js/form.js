@@ -30,6 +30,7 @@ var onSubmit = function (evt) {
       localStorage.setItem("user-name", userName.value);
 		  localStorage.setItem("phone", phone.value);
 	  	localStorage.setItem("question", question.value);
+      formInFooter.reset();
     }
   }
 }

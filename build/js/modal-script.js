@@ -10,6 +10,7 @@ var popupQuestion = popup.querySelector("[name=popup-question]");
 var header = document.querySelector(".header");
 var main = document.querySelector(".main");
 var footer = document.querySelector(".footer");
+var formInFooter = document.querySelector(".form__comment-item");
   
 var isStorageSupport = true;
 var storage = "";
@@ -27,6 +28,7 @@ link.addEventListener("click", function (evt) {
   header.classList.add("header__under-popup");
   main.classList.add("main__under-popup");
   footer.classList.add("footer__under-popup");
+  formInFooter.setAttribute("disabled");
   validatePhone();
 
   if (storage) {
