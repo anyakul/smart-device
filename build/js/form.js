@@ -3,6 +3,7 @@ var formInFooter = document.querySelector(".form");
 var userName = formInFooter.querySelector("[name=user-name]");
 var phone = formInFooter.querySelector("[name=phone]");
 var question = formInFooter.querySelector("[name=question]");
+var agree = formInFooter.querySelector("[name=agree]");
   
 var isStorageSupport = true;
 var storage = "";
@@ -21,7 +22,7 @@ phone.addEventListener('keypress', function (evt) {
 
 var onSubmit = function (evt) {
   evt.preventDefault();
-  if (!userName.value || !phone.value || !question.value) {
+  if (!userName.value || !phone.value || !question.value || !agree.checked) {
     formInFooter.classList.remove("form--error");
     formInFooter.offsetWidth = formInFooter.offsetWidth; 
     formInFooter.classList.add("form--error");
