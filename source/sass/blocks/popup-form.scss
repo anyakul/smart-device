@@ -21,14 +21,52 @@
 }
 
 .popup-form__label {
+  margin-bottom: 40px;
+}
+
+.popup-form__label-agree {
+  position: relative;
   color: $white-color;
   font-size: 14px;
   line-height: 16px;
   font-family: $pt-mono-regular-font;
   margin-bottom: 30px;
+  margin-left: 40px;
 }
 
 .popup-form__item-input [placeholder] {
   @include main-text;
   color: $white-color;
+}
+
+.popup-form__input-checkbox + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.popup-form__input-checkbox:checked + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.popup-form__input-checkbox:focus + label::before,
+.popup-form__input-checkbox:hover + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-off-hover.svg") no-repeat;
+}
+
+.popup-form__input-checkbox:checked:focus + label::before,
+.popup-form__input-checkbox:checked:hover + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-on-hover.svg") no-repeat;
+}
+
+.popup-form__input-checkbox:active + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-off-hover.svg") no-repeat;
+}
+
+.popup-form__input-checkbox:checked:active + label::before {
+  @include checkbox;
+  background: url("../img/checkbox-on-active.svg") no-repeat;
 }
