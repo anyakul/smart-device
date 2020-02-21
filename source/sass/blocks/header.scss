@@ -29,12 +29,11 @@
 @media (max-width: $tablet-width) {
   .header {
     width: 100%;
-    margin-bottom: 40px;
   }
 
   .header__wrapper {
     padding-top: 25px;
-    margin-bottom: 55px;
+    margin-bottom: 0;
   }
 
   .header__menu {

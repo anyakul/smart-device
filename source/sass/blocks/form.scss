@@ -94,9 +94,16 @@ abel:before {
   }
   
   .form__button {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    width: 100%;
   }
-  
+  .form__item-input {
+  @include input;
+  margin-bottom: 25px;
+}
+  .form__area {
+    margin-bottom: 28px;
+  }
   
 
   .form__button,

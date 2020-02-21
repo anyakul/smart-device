@@ -44,17 +44,32 @@
 }
 
 @media (max-width: $mobile-width) {
+  .copyright {
+    align-items: center;
+    padding-bottom: 0;
+  }
   .copyrights__list {
     @include flex-column;
-    aligh-items: center;
+    align-items: center;
+  align-content: center;
+  justify-content: center;
+    
   }
 
   .copyrights__item {
-    text-align: center;
+    margin: auto;
     padding-bottom: 20px;
+    text-align: center;
+    margin-right: 0;
 
     &:last-child {
       margin-left: 0;
     }
+  }
+
+  .copyrights__left {
+    width: 74%;
+    flex-direction: row;
+    text-align: center;
   }
 }

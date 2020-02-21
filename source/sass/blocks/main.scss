@@ -1,35 +1,28 @@
 @media (min-width: $desktop-width) {
-.main {
-  position: relative;
-  background-image: url("../../img/background-triangles1.svg");
-  background-repeat: no-repeat;
-  background-position: 0px 432px;
-  background-size: 636px 792px;
-  padding-top: 70px;
-  z-index: 20;
-}
-
-.main:before {
-  content: "";
-  position: absolute;
-  top: 145px;
-  left: 35%;
-  width: 636px;
-  height: 636px;
-  background-image: url("../../img/background-triangles2.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .main {
+    background-image: url("../../img/background-desktop1.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 70px;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .main {
-    position: relative;
-    background-image: url("../../img/background-triangles2.svg");
+    background-image: url("../../img/background-tablet.svg");
     background-repeat: no-repeat;
-    background-position: 300px 247px;
-    background-size: 636px 636px;
+    background-position: 0 0;
     padding-top: 70px;
+    z-index: 20;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main {
+    background-image: url("../../img/background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    padding-top: 0;
     z-index: 20;
   }
 }

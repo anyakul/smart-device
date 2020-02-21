@@ -80,28 +80,12 @@
     background-image: url("../img/icon-clock-active.svg");
   }
 }
-@media (min-width: $desktop-width) {
+//@media (min-width: $desktop-width) {
   .advantages {
-    width: 100%;
-    background-position: 92% 245px;
-    background-image: url("../../img/background-triangles-right.svg");
-    background-repeat: no-repeat;
-    background-size: 350px 350px;
     margin-bottom: 90px;
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 230px;
-      width: 300px;
-      height: 300px;
-      background-image: url("../../img/background-triangles-left.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 10;
-    }
+    
   }
-}
+//}
 
 .advantages__title {
   margin-bottom: 15px;
@@ -138,6 +122,9 @@
 }
 
 @media (max-width: $mobile-width) {
+.advantages {
+  margin-bottom: 5px;
+}
   .advantages__item {
     margin-right: 0;
     max-width: 90%;
@@ -147,10 +134,18 @@
     padding-right: 5%;
     padding-left: 8%;
     padding-bottom: 22px;
+    
+    &:last-child {
+    margin-bottom: 0;
+    }
   }
 
   .advantages__title {
     font-size: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 13px;
+  }
+  
+  .advantages__wrapper {
+    width: 99%;
   }
 }

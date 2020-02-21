@@ -41,7 +41,7 @@
 
 @media (max-width: $mobile-width) {
   .about-site {
-    padding-top: 20px;
+    padding-top: 25px;
     position: relative;
     border-bottom: 1px solid #626962;
     width: 100%;
@@ -71,6 +71,6 @@
   .about-site__title,
   .about-site__list {
     @include page-size;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }

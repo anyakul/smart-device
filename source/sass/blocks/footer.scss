@@ -60,12 +60,16 @@
 }
 
 @media (max-width: $mobile-width) {
+
+  .footer {
+    padding-top: 45px;
+  }
   .footer__up {
     padding-bottom: 0;
   }
-
-  .footer__logo {
-    margin-bottom: 20px;
+  
+  .footer__left {
+    padding-bottom: 45px;
   }
 
   .footer__left-wrapper {

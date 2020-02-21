@@ -1,46 +1,29 @@
 .promo {
   position: relative;
-  margin: 0 auto;
-  padding-bottom: 200px;
+ // margin: 0 auto;
   color: $white-color;
-
-  //  background-color: pink;
-}
-
-/*
-.promo::after {
-  content: "";
-  position: absolute;
-  top: -255px;
-  left: -150px;
-  width: 1920px;
-  height: 881px;
-                                   //  background-color: grey;
-  background-image: url("../../img/triangles.svg");
- // background-size: 705px 515px;
+  background-image: url("../../img/background-promo-desktop.svg");
   background-repeat: no-repeat;
-  background-position:  50% 50%;
- // z-index: 30;
+  background-position: 10% 0;
 }
 
 .promo::before {
   content: "";
   position: absolute;
   top: -10px;
-  left: -30px;
-  width: 1600px;
-  height: 700px;
-//  background-color: grey;
+  left: 10%;
+  width: 90%;
+  height: 515px;
   background-image: url("../../img/motherboard.png");
-  background-size: 705px 515px;
   background-repeat: no-repeat;
-   background-position: left calc(50% + 422px) top 0;
-   z-index: 50;
-}  */
+   background-position: left calc(50% + 366px) top 0;
+} 
 
 .promo__wrapper {
   @include page-size;
+  position: relative;
   height: 100%;
+  padding-bottom: 200px;
 }
 
 .promo__title {
@@ -67,7 +50,6 @@
   left: 0;
   top: 400px;
   transform: rotate(-90deg);
-  margin-left: 0;
   margin-top: 40px;
   color: $white-color;
   opacity: 0.5;
@@ -114,12 +96,25 @@
   }
 
   .promo {
-    margin-left: 20px;
-    background-size: 465px 340px;
-    background-position: left calc(50% + 340px) top 0;
-    padding-bottom: 160px;
+    padding-top: 40px;
+   // padding-bottom: 160px;
     margin-bottom: 55px;
+    background-image: url("../../img/background-promo-tablet.svg");
+    background-position: 60% -80px;
   }
+  
+  .promo::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 4%;
+    width: 781px;
+    height: 700px;
+    background-image: url("../../img/motherboard-tablet.png");
+   // background-size: cover;
+    background-repeat: no-repeat;
+     background-position: left calc(50% + 260px) top 0;
+  } 
 
   .promo__title {
     font-size: 3.75rem;
@@ -146,24 +141,44 @@
     line-height: 19px;
     font-family: $robotocondensedbold;
   }
+  
+  .promo__wrapper {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .promo {
     //  @include page-size;
     padding-bottom: 17px;
-    background-size: 300px 220px;
-    background-position: left top;
+   // background-size: 300px 220px;
+   // background-position: left top;
+    background-image: url("../../img/background-promo-mobile.svg");
     //   margin: 0 auto;
+    left: 0;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
+  
+  .promo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+  //  right: 0px;
+    width: 100%;
+    height: 515px;
+    left: 0;
+    background-image: url("../../img/motherboard-mobile.png");
+   // background-size: cover;
+    background-repeat: no-repeat;
+     background-position: left 7% top 0;
+  } 
 
-  /*
+  
   .promo__wrapper {
-    margin-left
-  }*/
+    padding-bottom: 50px;
+  }
 
   .promo__title {
     margin-top: 140px;
@@ -172,10 +187,11 @@
     line-height: 47px;
     width: 100%;
     margin-left: 0;
+    padding-top: 20px;
   }
 
   .promo__description {
-    margin-bottom: 35px;
+    margin-bottom: 6px;
     width: 100%;
     font-size: 16px;
     line-height: 26px;
@@ -185,10 +201,9 @@
   .promo__button {
     width: 95%;
     margin-left: 0;
-    margin-bottom: 55px;
+    margin-bottom: 0;
     padding: 17px;
     margin-top: 30px;
-    padding: 10px;
   }
 
   .promo__button--desktop {
