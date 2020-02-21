@@ -44,10 +44,10 @@ close.addEventListener("click", function (evt) {
 
 var addEventListeners = function() {
   document.addEventListener("mouseup", function (evt) {
-    evt.preventDefault();
-  //  if (evt.target === popup) {                    
-          popup.classList.remove("popup--show");
-  //  }
+    //evt.preventDefault();
+    if (evt.target !== popup && !popup.contains(evt.target)) {                    
+      popup.classList.remove("popup--show");
+    }
   });
 }
 
