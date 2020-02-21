@@ -68,13 +68,13 @@
       opacity: 0.1;
     }
 
-  /*&:hover {
-    opacity: 0.3;
+  &:hover {
+    opacity: 0.9;
   }
-
+  
   &:active {
-    opacity: 0.1;
-  }*/
+    opacity: 0.8;
+  }
 }
 
 .services__button {
@@ -150,7 +150,8 @@
     padding-top: 15px;
     padding-left: 13%;
     margin-bottom: 30px;
-  }
+  
+}
 .services__title {
   line-height: 43px;
   margin-bottom: 40px;
