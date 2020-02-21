@@ -4,9 +4,9 @@ var popup = document.querySelector(".popup");
 var popupActive = document.querySelector(".popup--show");
 var close = popup.querySelector(".popup__close"); 
 var popupForm = popup.querySelector(".popup-form");
-var userName = popup.querySelector("[name=user-name]");
-var phone = popup.querySelector("[name=phone]");
-var question = popup.querySelector("[name=question]");
+var popupUserName = popup.querySelector("[name=popup-user-name]");
+var popupPhone = popup.querySelector("[name=popup-phone]");
+var popupQuestion = popup.querySelector("[name=popup-question]");
 var header = document.querySelector(".header");
 var main = document.querySelector(".main");
 var footer = document.querySelector(".footer");
@@ -15,7 +15,7 @@ var isStorageSupport = true;
 var storage = "";
   
 try {
-   storage = localStorage.getItem("userName");    
+   storage = localStorage.getItem("popup-user-name");    
 } catch (err) {
    isStorageSupport = false;
 }  
@@ -30,16 +30,16 @@ link.addEventListener("click", function (evt) {
   validatePhone();
 
   if (storage) {
-    userName.value = localStorage.getItem("user-name");
-    phone.value = localStorage.getItem("phone");
+    popupUserName.value = localStorage.getItem("popup-user-name");
+    popupPhone.value = localStorage.getItem("popup-phone");
     if (userName.value) {
-  	  phone.focus();
+  	  popupPhone.focus();
 	  
 	  } else {
-		  question.focus();
+		  popupQuestion.focus();
 	  }
   } else {
-    userName.focus();
+    popupUserName.focus();
   }    
 });
 
@@ -62,7 +62,7 @@ var onMouseUp = function (evt) {
 }
 
 var validatePhone = function() {
-  phone.addEventListener('keypress', function (evt) {
+  popupPhone.addEventListener('keypress', function (evt) {
     if(!/\d/.test(evt.key)) {
       evt.preventDefault();
     }
@@ -71,15 +71,18 @@ var validatePhone = function() {
 
 var onSubmit = function (evt) {
   evt.preventDefault();
-  if (!userName.value || !phone.value || !question.value) {
+  if (!popupUserName.value || !popupPhone.value || !popupQuestion.value) {
     popup.classList.remove("popup--error");
     popup.offsetWidth = popup.offsetWidth; 
     popup.classList.add("popup--error");
   } else {
+    header.classList.remove("header__under-popup");
+    main.classList.remove("main__under-popup");
+    footer.classList.remove("footer__under-popup");
     if (isStorageSupport) { 
-      localStorage.setItem("user-name", userName.value);
-		  localStorage.setItem("phone", phone.value);
-	  	localStorage.setItem("question", question.value);
+      localStorage.setItem("popup-user-name", popupUserName.value);
+		  localStorage.setItem("popup-phone", popupPhone.value);
+	  	localStorage.setItem("popup-question", popupQuestion.value);
       popup.classList.remove("popup--show");
     }
   }
