@@ -1,9 +1,11 @@
+'use strict';
+
 var link = document.querySelector(".contacts__button");
-  
 var formInFooter = document.querySelector(".form");
 var userName = formInFooter.querySelector("[name=user-name]");
 var phone = formInFooter.querySelector("[name=phone]");
 var question = formInFooter.querySelector("[name=question]");
+var agree = formInFooter.querySelector("[name=agree]");
   
 var isStorageSupport = true;
 var storage = "";
@@ -14,19 +16,20 @@ try {
    isStorageSupport = false;
 }  
 
-var validatePhone = function() {
-  phone.addEventListener('keypress', function (evt) {
-    if(!/\d/.test(evt.key)) {
-      evt.preventDefault();
-    }
+phone.addEventListener('keypress', function (evt) {
+  if(!/\d/.test(evt.key)) {
+    evt.preventDefault();
+  }
+});  
+  phone.addEventListener('click', function (evt) {
+    phone.value = `+7 (`
   });
-}
+
 
 var onSubmit = function (evt) {
   evt.preventDefault();
-  if (!userName.value || !phone.value || !question.value) {
+  if (!userName.value || !phone.value.langth !== 13 || !question.value || !agree.checked) {
     formInFooter.classList.remove("form--error");
-    formInFooter.offsetWidth = popup.offsetWidth; 
     formInFooter.classList.add("form--error");
   } else {
     if (isStorageSupport) { 
@@ -34,15 +37,11 @@ var onSubmit = function (evt) {
 		  localStorage.setItem("phone", phone.value);
 	  	localStorage.setItem("question", question.value);
     }
+    document.querySelector(".form").reset();
   }
 }
 
-var addEventListeners = function() {
-  document.addEventListener("mouseup", onMouseUp);
-  formInFooter.addEventListener("submit", onSubmit);
-};
+console.log(formInFooter);
+console.log(localStorage);
 
-var removeEventListeners = function() {
-  document.removeEventListener("mouseup", onMouseUp);
-  formInFooter.removeEventListener("submit", onSubmit);
-};
+formInFooter.addEventListener("submit", onSubmit);

@@ -1,3 +1,5 @@
+'use strict';
+
 var link = document.querySelector(".contacts__button");
   
 var popup = document.querySelector(".popup");
@@ -7,9 +9,9 @@ var popup = document.querySelector(".popup");
 var popupActive = document.querySelector(".popup--show");
 var close = popup.querySelector(".popup__close"); 
 var popupForm = popup.querySelector(".popup-form");
-var userName = popup.querySelector("[name=user-name]");
-var phone = popup.querySelector("[name=phone]");
-var question = popup.querySelector("[name=question]");
+var userName = popup.querySelector("[name=popup-user-name]");
+var phone = popup.querySelector("[name=popup-phone]");
+var question = popup.querySelector("[name=popup-question]");
 var header = document.querySelector(".header");
 var main = document.querySelector(".main");
 var footer = document.querySelector(".footer");
@@ -70,20 +72,27 @@ var validatePhone = function() {
       evt.preventDefault();
     }
   });
+  
+  phone.addEventListener('click', function (evt) {
+    phone.value = `+7 (`
+  });
 }
 
 var onSubmit = function (evt) {
   evt.preventDefault();
-  if (!userName.value || !phone.value || !question.value) {
-    popup.classList.remove("popup--error");
-    popup.offsetWidth = popup.offsetWidth; 
-    popup.classList.add("popup--error");
+  if (!userName.value || !phone.value.langth !== 13 || !question.value || !agree.checked) {
+      popup.classList.remove("popup--error");
+      popup.classList.add("popup--error");
+    
   } else {
     if (isStorageSupport) { 
       localStorage.setItem("user-name", userName.value);
 		  localStorage.setItem("phone", phone.value);
 	  	localStorage.setItem("question", question.value);
       popup.classList.remove("popup--show");
+      header.classList.remove("header__under-popup");
+      main.classList.remove("main__under-popup");
+      footer.classList.remove("footer__under-popup");
     }
   }
 }
