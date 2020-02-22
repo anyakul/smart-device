@@ -60,20 +60,13 @@
     background-image: url("../../img/producing.png");
     background-size: cover;
   }
-    &::after:hover {
-      opacity: 0.3;
-    }
 
-    &::after:active {
-      opacity: 0.1;
-    }
-
-  /*&:hover {
+  &:hover {
     opacity: 0.3;
   }
   &:active {
     opacity: 0.1;
-  }*/
+  }
 }
 
 .services__button {
