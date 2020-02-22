@@ -38,14 +38,12 @@
   font-family: $roboto-mono-bold-font;
   color: $white-color;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 }
 
 .form__button {
   @include white-button;
   padding: 15px;
   width: 46%;
-  margin-bottom: 10px;
 }
 
 .form__label {
@@ -74,33 +72,18 @@
   @include checkbox;
   background: url("../../img/checkbox-on.svg") no-repeat;
 }
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
+/*
+.form__input-checkbox:focus + label::before,
+.form__input-checkbox:hover + label::before {
+  @include checkbox;
+  background: url("../../img/checkbox-off-hover.svg") no-repeat;
 }
-
-.form--error {
-  animation: shake 0.6s;
+.form__input-checkbox:checked:focus + label::before,
+.form__input-checkbox:checked:hover + label::before {
+  @include checkbox;
+  background: url("../../img/checkbox-on-hover.svg") no-repeat;
 }
-
+*/
 
 .form__label {
   @include white-link;
@@ -146,5 +129,32 @@
   .form__label,
   .form__item {
     width: 100%;
+  }
+  
+  .form__label--checkbox label {
+  position: relative;
+  margin-left: 42px;
+}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }

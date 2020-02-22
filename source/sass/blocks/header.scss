@@ -12,7 +12,7 @@
 }
 
 .header__logo {
-  width: 240px;
+  width: 200px;
 }
 
 .header__menu {
@@ -26,13 +26,10 @@
   align-items: center;
 }
 
-.header__under-popup {
-  opacity: 0.8;
-}
-
 @media (max-width: $tablet-width) {
   .header {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .header__wrapper {
