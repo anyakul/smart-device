@@ -38,12 +38,14 @@
   font-family: $roboto-mono-bold-font;
   color: $white-color;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .form__button {
   @include white-button;
   padding: 15px;
   width: 46%;
+  margin-bottom: 10px;
 }
 
 .form__label {

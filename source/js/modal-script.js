@@ -1,7 +1,6 @@
 var link = document.querySelector(".contacts__button");
   
 var popup = document.querySelector(".popup");
-var popupActive = document.querySelector(".popup--show");
 var close = popup.querySelector(".popup__close"); 
 var popupForm = popup.querySelector(".popup-form");
 var popupUserName = popup.querySelector("[name=popup-user-name]");
@@ -10,7 +9,7 @@ var popupQuestion = popup.querySelector("[name=popup-question]");
 var header = document.querySelector(".header");
 var main = document.querySelector(".main");
 var footer = document.querySelector(".footer");
-var formInFooter = document.querySelector(".form__comment-item");
+var formInFooter = document.querySelector(".form");
   
 var isStorageSupport = true;
 var storage = "";
@@ -22,13 +21,13 @@ try {
 }  
 
 link.addEventListener("click", function (evt) {
-  evt.preventDefault();	 
+  evt.preventDefault();
   popup.classList.add("popup--show");
   addEventListeners();
   header.classList.add("header__under-popup");
   main.classList.add("main__under-popup");
   footer.classList.add("footer__under-popup");
-  formInFooter.setAttribute("disabled");
+  formInFooter.setAttribute("disabled", true);
   validatePhone();
 
   if (storage) {
