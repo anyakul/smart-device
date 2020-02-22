@@ -23,6 +23,10 @@
   width: 70%;
 }
 
+.footer__under-popup {
+  opacity: 0.8;
+}
+
 @media (max-width: $tablet-width) {
   .footer {
     padding-top: 20px;
@@ -62,7 +66,7 @@
 @media (max-width: $mobile-width) {
 
   .footer {
-    padding-top: 45px;
+    padding-top: 50px;
   }
   .footer__up {
     padding-bottom: 0;

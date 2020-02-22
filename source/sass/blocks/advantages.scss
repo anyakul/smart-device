@@ -80,6 +80,12 @@
     background-image: url("../img/icon-clock-active.svg");
   }
 }
+//@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 90px;
+    
+  }
+//}
 
 .advantages__title {
   margin-bottom: 15px;
@@ -113,9 +119,16 @@
     font-size: 24px;
     margin-bottom: 10px;
   }
+  
+  .advantages__wrapper {
+  width: 100%;
+}
 }
 
 @media (max-width: $mobile-width) {
+.advantages {
+  margin-bottom: 5px;
+}
   .advantages__item {
     margin-right: 0;
     max-width: 90%;

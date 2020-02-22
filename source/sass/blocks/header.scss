@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 110px;
+  margin-bottom: 35px;
   background-color: $header-bg-color;
   background-image: url("../../img/background.png");
 }
@@ -26,10 +26,13 @@
   align-items: center;
 }
 
+.header__under-popup {
+  opacity: 0.8;
+}
+
 @media (max-width: $tablet-width) {
   .header {
     width: 100%;
-    margin-bottom: 30px;
   }
 
   .header__wrapper {

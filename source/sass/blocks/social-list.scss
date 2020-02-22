@@ -1,6 +1,5 @@
 .social-list {
   @include flex-row;
-  flex-wrap: wrap;
   @include cancel;
   width: 115px;
 }

@@ -60,13 +60,20 @@
     background-image: url("../../img/producing.png");
     background-size: cover;
   }
+    &::after:hover {
+      opacity: 0.3;
+    }
 
-  &:hover {
-    opacity: 0.9;
+    &::after:active {
+      opacity: 0.1;
+    }
+
+  /*&:hover {
+    opacity: 0.3;
   }
   &:active {
-    opacity: 0.8;
-  }
+    opacity: 0.1;
+  }*/
 }
 
 .services__button {
@@ -103,7 +110,7 @@
   }
   
   .services {
-    padding-top: 52px;
+    padding-top: 45px;
     padding-bottom: 35px;
   }
 
@@ -123,6 +130,7 @@
 @media (max-width: $mobile-width) {
   .services {
     background-color: $header-bg-color;
+    padding-top: 42px;
   }
   
   .services__info {
@@ -146,4 +154,10 @@
   line-height: 43px;
   margin-bottom: 40px;
 }
+
+
+.services__wrapper {
+  width: 87;
 }
+}
+

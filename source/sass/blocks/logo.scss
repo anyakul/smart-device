@@ -1,7 +1,6 @@
 .logo__link {
   @include flex-row;
   cursor: pointer;
-  width: 240px;
 }
 
 .logo__text {
@@ -24,7 +23,7 @@
   }
 
   .logo__icon {
-    height: 38px;
-    width: 38px;
+    height: 52px;
+    width: 52px;
   }
 }

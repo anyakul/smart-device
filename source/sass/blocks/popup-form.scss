@@ -1,36 +1,30 @@
-.popup-form__list {
-  @include cancel;
-}
-
 .popup-form__comment-item {
   border: none;
 }
 
 .popup-form__item-input {
   @include input;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .popup-form__area {
   @include text-area;
   @include main-text;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .popup-form__button {
   @include white-button;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: 100%;
   padding: 15px;
 }
 
 .popup-form__label {
   margin-bottom: 40px;
-  
 }
 
 .popup-form__label-agree {
-  display: block;
   position: relative;
   color: $white-color;
   font-size: 14px;

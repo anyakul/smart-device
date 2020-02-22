@@ -152,13 +152,13 @@
         </ul>
       </div>
     </section>
-    <section class="stay">
+    <section class="stay" id="form">
       <div class="stay__container">
         <div class="stay__wrapper">
           <div class="stay__forms">
             <h2 class="stay__header">Остались вопросы? Задайте их нам!</h2>
             <p class="stay__text">Мы проконсультируем Вас бесплатно</p>
-            <form class="stay__form form" id="form" method="post" action="#">
+            <form class="stay__form form" method="post" action="#">
 
               <fieldset class="form__comment-item form__comment-item--name">
                 <ul class="form__list">
@@ -194,7 +194,7 @@
           <div class="footer__left-wrapper">
             <div class="footer__logo">
               <a class="footer__logo-link footer-logo">
-                <img class="footer-logo__icon" src="img/icon-logo.svg" width="40" height="40" alt="smart device">
+                <img class="footer-logo__icon" src="img/icon-logo.svg" alt="smart device">
                 <div class="footer-logo__text">
                   <span class="footer-logo__header">Smart Device</span>
                   <span class="footer-logo__add">умные технологии</span>
@@ -277,7 +277,7 @@
       </div>
     </section>
   </footer>
-  <section class="popup" id="popup-form">
+  <section class="popup">
     <button class="popup__close"></button>
     <div class="popup__wrapper">
       <h2 class="popup__header">Закажите звонок</h2>
@@ -287,13 +287,13 @@
         <fieldset class="popup-form__comment-item popup-form__comment-item--name">
           <ul class="popup-form__list">
             <li class="popup-form__item popup-form__item--name">
-              <input class="popup-form__item-input" type="text" name="popup-user-name" id="popup-name" placeholder="Имя">
+              <input class="popup-form__item-input" type="text" name="user-name" id="popup-name" placeholder="Имя">
             </li>
             <li class="popup-form__item popup-form__item--number">
-              <input class="popup-form__item-input" type="tel" name="popup-phone" id="popup-number" placeholder="Телефон">
+              <input class="popup-form__item-input" type="tel" name="phone" id="popup-number" placeholder="Телефон">
             </li>
             <li class="popup-form__item popup-form__item--question">
-              <textarea class="popup-form__area" name="popup-question" id="popup-question" placeholder="Ваш вопрос"></textarea>
+              <textarea class="popup-form__area" name="question" id="popup-question" placeholder="Ваш вопрос"></textarea>
             </li>
           </ul>
         </fieldset>
@@ -307,6 +307,6 @@
   </section>
   <script src="js/about-script.js"></script>
   <script src="js/modal-script.js"></script>
- <!-- <script src="js/form.js"></script>-->
+  <script src="js/form.js"></script>
 </body>
 </html>

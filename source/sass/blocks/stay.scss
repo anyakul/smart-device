@@ -53,6 +53,7 @@
 @media (max-width: $tablet-width) {
   .stay__container {
     background-image: none;
+    width: 90%;
     margin: auto;
     &:before {
       display: none;
@@ -65,16 +66,17 @@
     margin-left: 0;
   }
   .stay__wrapper {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   .stay__header {
     line-height: 43px;
+    margin-bottom: 8px;
   }
 
   
   .stay__text {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   
   .stay {

@@ -1,32 +1,30 @@
 .popup {
   display: none;
   position: absolute;
-  top: 135px;
+  top: 20px;
   background-color: $blue-color;
   z-index: 100;
-  width: 26%;
-  margin-left: 37%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .popup__wrapper {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
+  @include page-size;
+  margin-top: 20px;
 }
 
 .popup__header {
   color: $white-color;
-  font-family: $robotocondensedbold;
+  font-family: $roboto-mono-regular-font;
   font-size: 28px;
-  line-height: 39px;
   font-weight: normal;
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 }
 
 .popup__text {
   @include main-text;
   color: $white-color;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .popup__close {
