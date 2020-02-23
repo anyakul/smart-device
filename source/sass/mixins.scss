@@ -276,14 +276,6 @@
   right: 0;
   position: absolute;
   z-index: 5;
-
-  &::hover {
-    opacity: 0.3;
-  }
-
-  &::active {
-    opacity: 0.1;
-  }
 }
 
 @mixin input {
@@ -306,6 +298,7 @@
     @include main-text;
     color: $white-color;
   }
+
   &::placeholder:active,
   &::placeholder:focus {
     color: $black-color;
@@ -336,14 +329,15 @@
     color: $black-color;
     outline: none;
   }
-  
+
   @media (max-width: $tablet-width) {
     height: 130px;
   }
-  
+
   @media (max-width: $mobile-width) {
     height: 80px;
   }
+
   &::placeholder {
     color: $white-color;
     font-size: 16px;

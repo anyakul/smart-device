@@ -47,13 +47,18 @@
 }
 
 .form__label {
+  @include white-link;
   display: flex;
   flex-direction: row;
-  width: 50%;
-  
+  font-family: $pt-mono-regular-font;
+  width: 47%;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+
   &:hover {
     color: $grey-color;
   }
+
   &:active {
     opacity: 0.5;
   }
@@ -100,46 +105,39 @@
   animation: shake 0.6s;
 }
 
-
-.form__label {
-  @include white-link;
-  font-family: $pt-mono-regular-font;
-  width: 47%;
-  opacity: 0.8;
-  letter-spacing: 0.05em;
-}
-
 @media (max-width: $tablet-width) {
   .form__item-input {
     @include input;
     margin-bottom: 38px;
   }
-  
+
   .form__area {
     margin-bottom: 40px;
   }
-  
+
   .form__button {
     width: 47%;
   }
 }
+
 @media (max-width: $mobile-width) {
   .form__buttons {
     @include flex-column;
   }
-  
+
   .form__button {
     margin-bottom: 25px;
     width: 100%;
   }
+
   .form__item-input {
-  @include input;
-  margin-bottom: 25px;
-}
+    @include input;
+    margin-bottom: 25px;
+  }
+
   .form__area {
     margin-bottom: 28px;
   }
-  
 
   .form__button,
   .form__label,

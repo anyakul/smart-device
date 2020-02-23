@@ -8,7 +8,7 @@
   .stay {
     background-image: url("../../img/background-form.svg");
     background-repeat: no-repeat;
-  
+
     &::before {
       content: "";
       top: 150px;
@@ -55,17 +55,17 @@
     background-image: none;
     width: 77%;
     margin: auto;
-    
-    &:before {
+
+    &::before {
       display: none;
     }
   }
 
   .stay__forms {
     width: 100%;
-    
     margin-left: 0;
   }
+
   .stay__wrapper {
     margin-top: 30px;
   }
@@ -75,11 +75,10 @@
     margin-bottom: 20px;
   }
 
-  
   .stay__text {
     margin-bottom: 52px;
   }
-  
+
   .stay {
     padding-top: 50px;
     padding-bottom: 103px;
@@ -92,11 +91,12 @@
     padding-top: 0;
     padding-bottom: 40px;
   }
+
   .stay__header {
     line-height: 40px;
     margin-bottom: 12px;
   }
-  
+
   .stay__text {
     margin-bottom: 23px;
   }

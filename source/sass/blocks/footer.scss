@@ -31,7 +31,7 @@
   .footer {
     padding-top: 20px;
   }
-  
+
   .footer__wrapper {
     @include flex-column;
     width: 100%;
@@ -46,7 +46,7 @@
     @include page-size;
     @include flex-row;
   }
-  
+
   .footer__up {
     padding-bottom: 36px;
   }
@@ -67,10 +67,11 @@
   .footer {
     padding-top: 50px;
   }
+
   .footer__up {
     padding-bottom: 0;
   }
-  
+
   .footer__left {
     padding-bottom: 45px;
   }

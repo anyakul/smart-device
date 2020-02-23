@@ -15,8 +15,8 @@
   height: 515px;
   background-image: url("../../img/motherboard.png");
   background-repeat: no-repeat;
-   background-position: left calc(50% + 366px) top 0;
-} 
+  background-position: left calc(50% + 366px) top 0;
+}
 
 .promo__wrapper {
   @include page-size;
@@ -100,7 +100,7 @@
     background-image: url("../../img/background-promo-tablet.svg");
     background-position: 60% -80px;
   }
-  
+
   .promo::before {
     content: "";
     position: absolute;
@@ -110,12 +110,12 @@
     height: 700px;
     background-image: url("../../img/motherboard-tablet.png");
     background-repeat: no-repeat;
-     background-position: left calc(50% + 260px) top 0;
-  } 
+    background-position: left calc(50% + 260px) top 0;
+  }
 
   .promo__title {
     font-size: 3.75rem;
-    margin-left: 45px;
+    margin-left: 65px;
     padding-top: 70px;
     width: 50%;
     line-height: 70px;
@@ -124,7 +124,7 @@
 
   .promo__description {
     font-size: 18px;
-    margin-left: 45px;
+    margin-left: 65px;
     margin-bottom: 18px;
     line-height: 28px;
     width: 70%;
@@ -133,13 +133,13 @@
   .promo__button {
     @include blue-button;
     margin-top: 40px;
-    margin-left: 95px;
+    margin-left: 115px;
     padding: 18px 33px;
     font-size: 16px;
     line-height: 19px;
     font-family: $robotocondensedbold;
   }
-  
+
   .promo__wrapper {
     margin-bottom: 0;
     padding-bottom: 160px;
@@ -155,7 +155,7 @@
     margin-left: 0;
     margin-bottom: 0;
   }
-  
+
   .promo::before {
     content: "";
     position: absolute;
@@ -166,9 +166,8 @@
     background-image: url("../../img/motherboard-mobile.png");
     background-repeat: no-repeat;
     background-position: left 7% top 0;
-  } 
+  }
 
-  
   .promo__wrapper {
     padding-bottom: 50px;
   }

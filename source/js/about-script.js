@@ -19,7 +19,7 @@ var openAboutSite = function () {
     aboutSite.classList.add('about-site--closed');
     aboutSite.classList.remove('about-site--opened');
   }
-}
+};
 
 var openAboutOffice = function () {
   if (aboutOffice.classList.contains('about-office--closed')) {
@@ -33,10 +33,9 @@ var openAboutOffice = function () {
     aboutOffice.classList.add('about-office--closed');
     aboutOffice.classList.remove('about-office--opened');
   }
-}
+};
 
 aboutSiteToggle.addEventListener('click', openAboutSite);
 aboutOfficeToggle.addEventListener('click', openAboutOffice);
 aboutSiteTitle.addEventListener('click', openAboutSite);
 aboutOfficeTitle.addEventListener('click', openAboutOffice);
-

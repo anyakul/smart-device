@@ -37,7 +37,7 @@
   .copyrights__item--sd {
     display: none;
   }
-  
+
   .copyrights__item:last-child {
     margin-left: 0;
   }
@@ -48,12 +48,12 @@
     align-items: center;
     padding-bottom: 0;
   }
+
   .copyrights__list {
     @include flex-column;
     align-items: center;
-  align-content: center;
-  justify-content: center;
-    
+    align-content: center;
+    justify-content: center;
   }
 
   .copyrights__item {

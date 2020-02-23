@@ -30,7 +30,6 @@
 .about-site__link {
   @include footer-list-item;
   @include black-link;
-  
 }
 
 @media (max-width: $tablet-width) {
@@ -46,8 +45,7 @@
     border-bottom: 1px solid #626962;
     width: 100%;
   }
-  
-  
+
   .about-site__list {
     @include flex-column;
   }
