@@ -53,8 +53,9 @@
 @media (max-width: $tablet-width) {
   .stay__container {
     background-image: none;
-    width: 90%;
+    width: 77%;
     margin: auto;
+    
     &:before {
       display: none;
     }
@@ -71,16 +72,36 @@
 
   .stay__header {
     line-height: 43px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
 
   
   .stay__text {
-    margin-bottom: 20px;
+    margin-bottom: 52px;
   }
   
   .stay {
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 103px;
     background-color: $blue-color;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .stay {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .stay__header {
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+  
+  .stay__text {
+    margin-bottom: 23px;
+  }
+
+  .stay__container {
+    width: 90%;
   }
 }

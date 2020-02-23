@@ -1,3 +1,7 @@
+.logo {
+  width: 200px;
+}
+
 .logo__link {
   @include flex-row;
   cursor: pointer;
@@ -9,7 +13,6 @@
 
 .logo__header {
   @include logo-header;
-  
   color: $white-color;
 }
 
@@ -20,10 +23,5 @@
 @media (max-width: $mobile-width) {
   .logo__text {
     display: none;
-  }
-
-  .logo__icon {
-    height: 52px;
-    width: 52px;
   }
 }

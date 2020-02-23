@@ -24,7 +24,7 @@
 }
 
 .form__item--question {
-  width: 94%;
+  width: 100%;
 }
 
 .form__area {
@@ -49,6 +49,7 @@
 .form__label {
   display: flex;
   flex-direction: row;
+  width: 50%;
   
   &:hover {
     color: $grey-color;
