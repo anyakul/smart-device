@@ -15,33 +15,71 @@ try {
 } catch (err) {
    isStorageSupport = false;
 }  
+window.addEventListener("DOMContentLoaded", function() { 
+function setCursorPosition(pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+        var range = elem.createTextRange();
+        range.collapse(true);
+        range.moveEnd("character", pos);
+        range.moveStart("character", pos);
+        range.select()
+    }
+}
 
-phone.addEventListener('keypress', function (evt) {
-  if(!/\d/.test(evt.key)) {
+function mask(event) {
+    var matrix = "+7 (___) ___ ____",
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = this.value.replace(/\D/g, "");
+    if (def.length >= val.length) val = def;
+    this.value = matrix.replace(/./g, function(a) {
+        return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+    });
+    if (event.type == "blur") {
+        if (this.value.length == 2) this.value = ""
+    } else setCursorPosition(this.value.length, this)
+};
+    var phone = document.querySelector("#phone");
+    phone.addEventListener("input", mask, false);
+   phone.addEventListener("focus", mask, false);
+    phone.addEventListener("blur", mask, false);
+ });
+ 
+
+
+/*phone.addEventListener('keypress', function (evt) {
+   if(!/\d/.test(evt.key)) {
     evt.preventDefault();
-  }
+  } 
 });  
   phone.addEventListener('click', function (evt) {
-    phone.value = `+7 (`
-  });
+    phone.value = `+7()`
+  });*/
 
 
 var onSubmit = function (evt) {
   evt.preventDefault();
-  if (!userName.value || !phone.value.langth !== 13 || !question.value || !agree.checked) {
+  if (!userName.value ||  phone.value.length !== 17 || !question.value || !agree.checked) {
     formInFooter.classList.remove("form--error");
+    formInFooter.offsetWidth;
     formInFooter.classList.add("form--error");
   } else {
-    if (isStorageSupport) { 
+    if (isStorageSupport) {
+      if (formInFooter.classList.contains("form--error")) {
+        formInFooter.classList.remove("form--error");
+      }  
       localStorage.setItem("user-name", userName.value);
 		  localStorage.setItem("phone", phone.value);
 	  	localStorage.setItem("question", question.value);
+      
     }
-    document.querySelector(".form").reset();
+    formInFooter.reset();
   }
 }
 
-console.log(formInFooter);
-console.log(localStorage);
+//console.log(formInFooter);
+//console.log(localStorage);
 
 formInFooter.addEventListener("submit", onSubmit);
