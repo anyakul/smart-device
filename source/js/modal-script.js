@@ -152,6 +152,4 @@ function mask(event) {
     document.removeEventListener("mouseup", onMouseUp);
     popupForm.removeEventListener("submit", onSubmit);
   };
-
-  
 })();
