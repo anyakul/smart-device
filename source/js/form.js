@@ -33,19 +33,19 @@ window.addEventListener('DOMContentLoaded', function () {
     var matrix = '+7 (___) ___ ____';
     var i = 0;
     var def = matrix.replace(/\D/g, '');
-    var val = this.value.replace(/\D/g, '');
+    var val = phone.value.replace(/\D/g, '');
     if (def.length >= val.length) {
       val = def;
     }
-    this.value = matrix.replace(/./g, function (a) {
+    phone.value = matrix.replace(/./g, function (a) {
       return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
     });
     if (event.type === 'blur') {
-      if (this.value.length === 2) {
-        this.value = '';
+      if (phone.value.length === 2) {
+        phone.value = '';
       }
     } else {
-      setCursorPosition(this.value.length, this);
+      setCursorPosition(phone.value.length, phone);
     }
   }
   phone.addEventListener('input', mask, false);
