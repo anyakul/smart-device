@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   color: $white-color;
-  background-image: url("../../img/background-promo-desktop.svg");
+  background-image: url("../img/background-promo-desktop.svg");
   background-repeat: no-repeat;
   background-position: 10% 0;
   
@@ -15,12 +15,12 @@
   left: 10%;
   width: 90%;
   height: 515px;
-  background-image: url("../../img/motherboard-desktop@1x.png");
+  background-image: url("../img/motherboard-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: left calc(50% + 366px) top 0;
   
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/motherboard-desktop@2x.png");
+    background-image: url("../img/motherboard-desktop@2x.png");
   }
 }
 
@@ -103,7 +103,7 @@
   .promo {
     padding-top: 40px;
     margin-bottom: 55px;
-    background-image: url("../../img/background-promo-tablet.svg");
+    background-image: url("../img/background-promo-tablet.svg");
     background-position: 60% -80px;
   }
 
@@ -114,12 +114,12 @@
     left: -2%;
     width: 781px;
     height: 700px;
-    background-image: url("../../img/motherboard-tablet@1x.png");
+    background-image: url("../img/motherboard-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left calc(50% + 260px) top 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/motherboard-tablet@2x.png");
+      background-image: url("../img/motherboard-tablet@2x.png");
     }
   }
 
@@ -159,7 +159,7 @@
 @media (max-width: $mobile-width) {
   .promo {
     padding-bottom: 17px;
-    background-image: url("../../img/background-promo-mobile.svg");
+    background-image: url("../img/background-promo-mobile.svg");
     left: 0;
     width: 100%;
     margin-left: 0;
