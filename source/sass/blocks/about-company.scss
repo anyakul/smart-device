@@ -1,6 +1,6 @@
 .about-company {
   @include page-size;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 .about-company__wrapper {
@@ -9,8 +9,8 @@
 }
 
 .about-company__explanation {
+  margin-top: -15px;
   width: 85%;
-  margin-left: 30px;
 }
 
 .about-company__header {
@@ -18,20 +18,29 @@
   margin-bottom: 20px;
 }
 
+.about-company__texts {
+  margin-bottom: 40px;
+}
+
 .about-company__text {
   @include main-text;
   margin-bottom: 20px;
+
+  &:last-child {
+    @include main-text;
+    margin-bottom: 0;
+  }
 }
 
 .about-company__button {
   @include button-text;
   @include blue-border-button;
   padding: 15px 50px;
-  margin-top: 15px;
 }
 
-.about-company__icon {
+.about-company__image {
   height: 100%;
+  width: 120px;
 }
 
 @media (max-width: $tablet-width) {
@@ -43,6 +52,11 @@
   .about-company__icon {
     width: 137px;
   }
+  
+  .about-company__header {
+    margin-bottom: 24px;
+  }
+
 
   .about-company__explanation {
     width: 74%;
@@ -52,16 +66,21 @@
     @include main-text;
     margin-bottom: 22px;
   }
+  
+  .about-company__image {
+    width: 132px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .about-company {
     margin-bottom: 63px;
+    width: 90%;
   }
 
   .about-company__header {
     @include main-header;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .about-company__wrapper picture {
@@ -72,12 +91,16 @@
     width: 100%;
     margin-left: 0;
   }
+  
+  .about-company__texts {
+    margin-bottom: 28px;
+  }
 
   .about-company__text {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 
   .about-company__text:last-child {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 }
