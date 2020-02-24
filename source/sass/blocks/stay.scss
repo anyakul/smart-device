@@ -6,7 +6,7 @@
 
 @media (min-width: $desktop-width) {
   .stay {
-    background-image: url("../../img/background-form.svg");
+    background-image: url("../img/background-form.svg");
     background-repeat: no-repeat;
 
     &::before {
@@ -16,9 +16,13 @@
       width: 511px;
       height: 288px;
       position: absolute;
-      background-image: url("../../img/paper_airplane.png");
+      background-image: url("../img/paper-airplane@1x.png");
       background-size: 511px 288px;
       background-repeat: no-repeat;
+      
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/paper-airplane@2x.png");
+      }
     }
   }
 }

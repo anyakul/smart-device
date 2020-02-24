@@ -37,30 +37,30 @@
   &--parts::after {
     @include picture-after;
     background-size: cover;
-    background-image: url("../../img/parts-desktop@1x.png");
+    background-image: url("../img/parts-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/parts-desktop@2x.png");
+      background-image: url("../img/parts-desktop@2x.png");
     }
   }
 
   &--mounting::after {
     @include picture-after;
     background-size: cover;
-    background-image: url("../../img/mounting-desktop@1x.png");
+    background-image: url("../img/mounting-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/mounting-desktop@2x.png");
+      background-image: url("../img/mounting-desktop@2x.png");
     }
   }
 
   &--production::after {
     @include picture-after;
-    background-image: url("../../img/producing-desktop@1x.png");
+    background-image: url("../img/producing-desktop@1x.png");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/producing-desktop@2x.png");
+      background-image: url("../img/producing-desktop@2x.png");
     }
   }
 
@@ -84,7 +84,7 @@
   z-index: 30;
   border: none;
   border-radius: 0;
-  background-image: url("../../img/icon-more.svg");
+  background-image: url("../img/icon-more.svg");
   background-size: 15px 10px;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -120,26 +120,26 @@
     margin-bottom: 44px;
 
     &--parts::after {
-      background-image: url("../../img/parts-tablet@1x.png");
+      background-image: url("../img/parts-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/parts-tablet@2x.png");
+        background-image: url("../img/parts-tablet@2x.png");
       }
     }
 
     &--mounting::after {
-      background-image: url("../../img/mounting-tablet@1x.png");
+      background-image: url("../img/mounting-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/mounting-tablet@2x.png");
+        background-image: url("../img/mounting-tablet@2x.png");
       }
     }
 
     &--production::after {
-      background-image: url("../../img/producing-tablet@1x.png");
+      background-image: url("../img/producing-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/producing-tablet@2x.png");
+        background-image: url("../img/producing-tablet@2x.png");
       }
     }
   }
@@ -169,26 +169,26 @@
     margin-bottom: 30px;
 
     &--parts::after {
-      background-image: url("../../img/parts-mobile@1x.png");
+      background-image: url("../img/parts-mobile@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/parts-mobile@2x.png");
+        background-image: url("../img/parts-mobile@2x.png");
       }
     }
 
     &--mounting::after {
-      background-image: url("../../img/mounting-mobile@1x.png");
+      background-image: url("../img/mounting-mobile@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/mounting-mobile@2x.png");
+        background-image: url("../img/mounting-mobile@2x.png");
       }
     }
 
     &--production::after {
-      background-image: url("../../img/producing-mobile@1x.png");
+      background-image: url("../img/producing-mobile@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/producing-mobile@2x.png");
+        background-image: url("../img/producing-mobile@2x.png");
       }
     }
   }
@@ -203,18 +203,18 @@
   }
   
   .services__button {
-  width: 63px;
-  height: 63px;
-  bottom: 0;
-  right: 0;
-  left: 73%;
-  z-index: 30;
-  border-radius: 0;
-  background-image: url("../../img/icon-more.svg");
-  background-size: 15px 10px;
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
+    width: 63px;
+    height: 63px;
+    bottom: 0;
+    right: 0;
+    left: 73%;
+    z-index: 30;
+    border-radius: 0;
+    background-image: url("../img/icon-more.svg");
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 
   .services__title {
     line-height: 43px;

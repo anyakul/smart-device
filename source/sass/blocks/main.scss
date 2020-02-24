@@ -1,6 +1,6 @@
 @media (min-width: $desktop-width) {
   .main {
-    background-image: url("../../img/background-desktop1.svg");
+    background-image: url("../img/background-desktop1.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     padding-top: 70px;
@@ -13,7 +13,7 @@
 
 @media (max-width: $tablet-width) {
   .main {
-    background-image: url("../../img/background-tablet.svg");
+    background-image: url("../img/background-tablet.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     padding-top: 0;
@@ -23,7 +23,7 @@
 
 @media (max-width: $mobile-width) {
   .main {
-    background-image: url("../../img/background-mobile.svg");
+    background-image: url("../img/background-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     padding-top: 0;
