@@ -3,7 +3,7 @@
   color: $white-color;
   background-image: url("../img/background-promo-desktop.svg");
   background-repeat: no-repeat;
-  background-position: 10% 12px
+  background-position: 10% 12px;
 }
 
 .promo::before {
@@ -42,26 +42,12 @@
 }
 
 .promo__description {
+  margin-bottom: 40px;
   @include flex-row;
   width: 51%;
   font-family: $pt-mono-regular-font;
   font-size: 22px;
   line-height: 34px;
-}
-
-.promo__button-scroll {
-  position: absolute;
-  left: -45px;
-  top: 400px;
-  transform: rotate(-90deg);
-  margin-top: 78px;
-  color: $white-color;
-  font-size: 14px;
-  opacity: 0.5;
-  cursor: pointer;
-  line-height: 16px;
-  font-family: $pt-mono-regular-font;
-  text-decoration: none;
 }
 
 .promo__icon {
@@ -77,7 +63,6 @@
 
 .promo__button {
   @include blue-button;
-  margin-top: 40px;
   margin-left: 86px;
   padding: 21px 48px;
   font-size: 16px;
@@ -91,37 +76,43 @@
   display: none;
 }
 
+.promo__button-scroll {
+  position: absolute;
+  margin-top: 78px;
+  left: -40px;
+  top: 400px;
+  transform: rotate(-90deg);
+  color: $white-color;
+  font-size: 14px;
+  opacity: 0.5;
+  cursor: pointer;
+  line-height: 16px;
+  font-family: $pt-mono-regular-font;
+  text-decoration: none;
+}
+
 @media (max-width: $tablet-width) {
-  .promo__icon svg {
-    width: 33px;
-  }
-
-  .promo__button-scroll {
-    display: none;
-  }
-
   .promo {
-    padding-top: 40px;
-    margin-bottom: 55px;
     background-image: url("../img/background-promo-tablet.svg");
-    background-position: 60% -80px;
+    padding-top: 40px;
+    background-position: 60% -77px;
   }
 
   .promo::before {
-    content: "";
-    position: absolute;
     top: 30px;
-    left: -2%;
-    width: 781px;
-    height: 700px;
+    left: 18%;
+
     background-image: url("../img/motherboard-tablet@1x.png");
-    background-repeat: no-repeat;
     background-position: left calc(50% + 260px) top 0;
     background-size: 465px 340px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/motherboard-tablet@2x.png");
     }
+  }
+
+  .promo__wrapper {
+    padding-bottom: 164px;
   }
 
   .promo__title {
@@ -136,48 +127,41 @@
   .promo__description {
     font-size: 18px;
     margin-left: 65px;
-    margin-bottom: 18px;
+    margin-bottom: 55px;
     line-height: 28px;
     width: 70%;
   }
 
-  .promo__button {
-    @include blue-button;
-    margin-top: 40px;
-    margin-left: 115px;
-    padding: 18px 33px;
-    font-size: 16px;
-    line-height: 19px;
-    font-family: $robotocondensedbold;
+  .promo__icon svg {
+    width: 33px;
   }
 
-  .promo__wrapper {
-    margin-bottom: 0;
-    padding-bottom: 160px;
+  .promo__button {
+    margin-left: 115px;
+    padding: 18px 37px;
   }
+
+  .promo__button-scroll {
+    display: none;
+  }
+
 }
 
 @media (max-width: $mobile-width) {
   .promo {
-    padding-bottom: 17px;
     background-image: url("../img/background-promo-mobile.svg");
-    left: 0;
     width: 100%;
-    margin-left: 0;
-    margin-bottom: 0;
+    background-position: 60% -70px;
   }
 
   .promo::before {
-    content: "";
-    position: absolute;
-    top: 0;
+    top: 20px;
     width: 100%;
     height: 515px;
     left: 0;
     background-image: url("../img/motherboard-mobile@1x.png");
     background-size: 300px 220px;
-    background-repeat: no-repeat;
-    background-position: left 7% top 0;
+    background-position: left 26px top 5px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/motherboard-mobile@2x.png");
@@ -185,20 +169,21 @@
   }
 
   .promo__wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 
   .promo__title {
-    margin-top: 140px;
+    margin-top: 177px;
     font-size: 2.5rem;
     line-height: 47px;
     width: 100%;
     margin-left: 0;
-    padding-top: 20px;
+    padding-top: 0;
+    margin-bottom: 27px;
   }
 
   .promo__description {
-    margin-bottom: 6px;
+    margin-bottom: 38px;
     width: 100%;
     font-size: 16px;
     line-height: 26px;
@@ -206,11 +191,9 @@
   }
 
   .promo__button {
-    width: 95%;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding: 17px;
-    margin-top: 30px;
+    width: 85%;
+    margin-left: 5px;
+    padding: 18px;
   }
 
   .promo__button--desktop {
