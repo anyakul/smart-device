@@ -132,11 +132,13 @@
 
   .form__item-input {
     @include input;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .form__area {
     margin-bottom: 28px;
+    padding: 13px 5%;
+    margin-bottom: 25px;
   }
 
   .form__button,

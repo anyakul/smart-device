@@ -282,7 +282,7 @@
   border: none;
   padding: 15px 5%;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 90%;
+  width: 85%;
   color: $black-color;
 
   &:hover {
@@ -306,7 +306,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 20px 5%;
+    padding: 20px 8%;
+  }
+  
+  @media (max-width: $mobile-width) {
+    padding: 20px 6%;
+    width: 100%;
   }
 }
 
@@ -331,7 +336,9 @@
   }
 
   @media (max-width: $tablet-width) {
-    height: 130px;
+    height: 135px;
+    padding: 13px 4%;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width) {
