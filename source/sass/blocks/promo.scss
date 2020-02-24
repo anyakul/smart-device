@@ -4,6 +4,8 @@
   background-image: url("../../img/background-promo-desktop.svg");
   background-repeat: no-repeat;
   background-position: 10% 0;
+  
+  
 }
 
 .promo::before {
@@ -13,9 +15,13 @@
   left: 10%;
   width: 90%;
   height: 515px;
-  background-image: url("../../img/motherboard.png");
+  background-image: url("../../img/motherboard-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: left calc(50% + 366px) top 0;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/motherboard-desktop@2x.png");
+  }
 }
 
 .promo__wrapper {
@@ -46,7 +52,7 @@
 
 .promo__button-scroll {
   position: absolute;
-  left: -50px;
+  left: -45px;
   top: 400px;
   transform: rotate(-90deg);
   margin-top: 40px;
@@ -108,9 +114,13 @@
     left: -2%;
     width: 781px;
     height: 700px;
-    background-image: url("../../img/motherboard-tablet.png");
+    background-image: url("../../img/motherboard-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left calc(50% + 260px) top 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/motherboard-tablet@2x.png");
+    }
   }
 
   .promo__title {
@@ -163,9 +173,13 @@
     width: 100%;
     height: 515px;
     left: 0;
-    background-image: url("../../img/motherboard-mobile.png");
+    background-image: url("../../img/motherboard-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: left 7% top 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/motherboard-mobile@2x.png");
+    }
   }
 
   .promo__wrapper {

@@ -37,19 +37,31 @@
   &--parts::after {
     @include picture-after;
     background-size: cover;
-    background-image: url("../../img/parts.png");
+    background-image: url("../../img/parts-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/parts-desktop@2x.png");
+    }
   }
 
   &--mounting::after {
     @include picture-after;
     background-size: cover;
-    background-image: url("../../img/mounting.png");
+    background-image: url("../../img/mounting-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/mounting-desktop@2x.png");
+    }
   }
 
   &--production::after {
     @include picture-after;
-    background-image: url("../../img/producing.png");
+    background-image: url("../../img/producing-desktop@1x.png");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/producing-desktop@2x.png");
+    }
   }
 
   &:hover {
@@ -106,6 +118,30 @@
     padding-top: 38px;
     padding-left: 6%;
     margin-bottom: 44px;
+
+    &--parts::after {
+      background-image: url("../../img/parts-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/parts-tablet@2x.png");
+      }
+    }
+
+    &--mounting::after {
+      background-image: url("../../img/mounting-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/mounting-tablet@2x.png");
+      }
+    }
+
+    &--production::after {
+      background-image: url("../../img/producing-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/producing-tablet@2x.png");
+      }
+    }
   }
 
   .services__info {
@@ -131,6 +167,30 @@
     padding-top: 15px;
     padding-left: 13%;
     margin-bottom: 30px;
+
+    &--parts::after {
+      background-image: url("../../img/parts-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/parts-mobile@2x.png");
+      }
+    }
+
+    &--mounting::after {
+      background-image: url("../../img/mounting-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/mounting-mobile@2x.png");
+      }
+    }
+
+    &--production::after {
+      background-image: url("../../img/producing-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/producing-mobile@2x.png");
+      }
+    }
   }
 
   .services__info {
