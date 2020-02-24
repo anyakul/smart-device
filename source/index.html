@@ -114,7 +114,10 @@
     <!--about-->
     <section class="about-company">
       <div class="about-company__wrapper">
-        <img class="about-company__icon" src="img/year.png" alt="smart device">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/year-tablet@1x.png 1x, img/year-tablet@2x.png 2x">
+          <img class="about-company__image" src="img/year-desktop@1x.png" srcset="img/year-desktop@1x.png 1x, img/year-desktop@2x.png 2x" alt="Год">
+        </picture>
         <div class="about-company__explanation">
           <h2 class="about-company__header">О компании</h2>
           <p class="about-company__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые

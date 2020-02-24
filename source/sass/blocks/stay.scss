@@ -19,7 +19,7 @@
       background-image: url("../img/paper-airplane@1x.png");
       background-size: 511px 288px;
       background-repeat: no-repeat;
-      
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/paper-airplane@2x.png");
       }
