@@ -30,6 +30,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .copyrights {
+    padding-top: 22px;
+  }
+
   .copyrights__item--all-rights {
     display: none;
   }

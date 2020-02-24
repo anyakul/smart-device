@@ -64,7 +64,7 @@
 .services__button {
   @include blue-button;
   position: absolute;
-  min-width: 63px;
+  width: 63px;
   height: 63px;
   bottom: 0;
   right: 0;
@@ -141,6 +141,20 @@
     z-index: 10;
     width: 60%;
   }
+  
+  .services__button {
+  width: 63px;
+  height: 63px;
+  bottom: 0;
+  right: 0;
+  left: 73%;
+  z-index: 30;
+  border-radius: 0;
+  background-image: url("../../img/icon-more.svg");
+  background-size: 15px 10px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 
   .services__title {
     line-height: 43px;

@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 56px;
+  padding-top: 65px;
   padding-bottom: 55px;
   background-color: $footer-bg-color;
 }
@@ -59,13 +59,13 @@
 
   .footer__about {
     @include page-size;
-    padding-top: 35px;
+    padding-top: 32px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .footer {
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   .footer__up {
