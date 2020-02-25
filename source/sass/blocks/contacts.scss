@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   min-width: 47%;
   align-items: center;
+  margin-top: 10px;
 }
 
 .contacts__item {
@@ -27,7 +28,7 @@
 }
 
 .contacts__item:first-child {
-  margin-right: 57px;
+  margin-right: 75px;
 }
 
 .contacts__item a {
@@ -46,7 +47,7 @@
 .contacts__button {
   @include white-button;
   margin-top: -3px;
-  padding: 12px 32px;
+  padding: 12px 27px;
   font-family: $robotocondensedbold;
 }
 
@@ -81,5 +82,12 @@
 
   .contacts__text {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    margin-top: 12px;
+    min-width: 75px;
   }
 }

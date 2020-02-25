@@ -33,9 +33,18 @@
 }
 
 @font-face {
-  font-family: "Robotocondensedbold";
+  font-family: "Robotocondensedregular";
   src: url("../fonts/RobotoCondensed-regular.woff") format("woff"),
     url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Robotocondensedbold";
+  src: url("../fonts/RobotoCondensedbold.woff") format("woff"),
+    url("../fonts/RobotoCondensedbold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+

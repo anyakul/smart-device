@@ -42,7 +42,7 @@
 }
 
 .promo__description {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   @include flex-row;
   width: 51%;
   font-family: $pt-mono-regular-font;
@@ -52,7 +52,9 @@
 
 .promo__icon {
   margin: 0;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-top: -5px;
+  margin-right: 25px;
 }
 
 .promo__icon svg {
@@ -62,8 +64,8 @@
 
 .promo__button {
   @include blue-button;
-  margin-left: 86px;
-  padding: 21px 48px;
+  margin-left: 96px;
+  padding: 20px 48px;
   font-size: 16px;
   line-height: 19px;
   font-family: $robotocondensedbold;
@@ -78,7 +80,7 @@
 .promo__button-scroll {
   position: absolute;
   margin-top: 78px;
-  left: -40px;
+  left: -35px;
   top: 400px;
   transform: rotate(-90deg);
   color: $white-color;
@@ -93,8 +95,8 @@
 @media (max-width: $tablet-width) {
   .promo {
     background-image: url("../img/background-promo-tablet.svg");
-    padding-top: 40px;
-    background-position: 60% -77px;
+    padding-top: 48px;
+    background-position: 60% -72px;
   }
 
   .promo::before {
@@ -118,6 +120,7 @@
     font-size: 3.75rem;
     margin-left: 65px;
     padding-top: 70px;
+    margin-bottom: 28px;
     width: 50%;
     line-height: 70px;
   }
@@ -129,6 +132,13 @@
     line-height: 28px;
     width: 70%;
   }
+  
+  .promo__icon {
+    margin-right: 13px;
+    margin-top: -2px;
+    margin-left: 3px;
+  }
+
 
   .promo__icon svg {
     width: 33px;
@@ -136,7 +146,7 @@
 
   .promo__button {
     margin-left: 115px;
-    padding: 18px 37px;
+    padding: 18px 33px;
   }
 
   .promo__button-scroll {
@@ -173,7 +183,7 @@
     line-height: 47px;
     width: 100%;
     margin-left: 0;
-    padding-top: 177px;
+    padding-top: 170px;
     margin-bottom: 27px;
   }
 
@@ -197,5 +207,9 @@
 
   .promo__button--mobile {
     display: inline-block;
+  }
+  
+  .promo__icon {
+    margin-right: 17px;
   }
 }
