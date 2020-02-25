@@ -44,10 +44,12 @@
   }
 
   .about-office--closed .about-office__toggle {
+    position: absolute;
     background-image: url("../img/icon-plus.svg");
   }
 
   .about-office--opened .about-office__toggle {
     background-image: url("../img/icon-minus.svg");
+    background-position: 0 50%;
   }
 }
