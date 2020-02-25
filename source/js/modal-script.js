@@ -17,16 +17,18 @@
   var isStorageSupport = true;
   var storage = '';
 
+  function noScroll() {
+    window.scrollTo(0, 0);
+  }
+
   var activatePage = function () {
     header.classList.remove('header__under-popup');
-    main.classList.remove('main__under-popup');
-    footer.classList.remove('footer__under-popup');
+    window.removeEventListener('scroll', noScroll);
   };
 
   var deactivatePage = function () {
     header.classList.add('header__under-popup');
-    main.classList.add('main__under-popup');
-    footer.classList.add('footer__under-popup');
+    window.addEventListener('scroll', noScroll);
   };
 
   var closePopup = function () {
