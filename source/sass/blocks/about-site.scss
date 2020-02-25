@@ -53,11 +53,21 @@
 
   .about-site--closed .about-site__toggle {
     background-image: url("../img/icon-plus.svg");
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 
   .about-site--opened .about-site__toggle {
     background-image: url("../img/icon-minus.svg");
-     background-position: 0 50%;
+    background-position: 0 50%;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 
   .about-site__title,
