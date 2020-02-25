@@ -1,20 +1,19 @@
 .footer-logo {
   @include flex-row;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   padding-top: 5px;
   cursor: pointer;
 }
 
 .footer-logo__icon {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 52px;
+  height: 52px;
 }
 
 .footer-logo__text {
   @include flex-column;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 .footer-logo__header {

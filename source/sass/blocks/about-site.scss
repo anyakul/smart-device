@@ -16,7 +16,6 @@
   @include flex-row;
   flex-wrap: wrap;
   text-align: left;
-  list-style-position: inside;
 }
 
 .about-site__list-left {
@@ -30,12 +29,6 @@
 .about-site__link {
   @include footer-list-item;
   @include black-link;
-}
-
-@media (max-width: $tablet-width) {
-  .about-site__list {
-    @include flex-column;
-  }
 }
 
 @media (max-width: $mobile-width) {

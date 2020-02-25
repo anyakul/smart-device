@@ -8,9 +8,12 @@
   flex-wrap: wrap;
 }
 
+.form__item {
+  margin-bottom: 45px;
+}
+
 .form__item-input {
   @include input;
-  margin-bottom: 45px;
 }
 
 .form__item-input::placeholder {
@@ -29,7 +32,6 @@
 
 .form__area {
   @include text-area;
-  margin-bottom: 44px;
   height: 120px;
 }
 
@@ -106,17 +108,12 @@
 }
 
 @media (max-width: $tablet-width) {
-  .form__item-input {
-    @include input;
+  .form__item {
     margin-bottom: 38px;
   }
 
-  .form__area {
-    margin-bottom: 40px;
-  }
-
-  .form__button {
-    width: 47%;
+  .form__item-input {
+    @include input;
   }
 }
 
@@ -124,21 +121,18 @@
   .form__buttons {
     @include flex-column;
   }
+  
+  .form__item {
+    margin-bottom: 26px;
+  }
 
   .form__button {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     width: 100%;
   }
 
-  .form__item-input {
-    @include input;
-    margin-bottom: 27px;
-  }
-
   .form__area {
-    margin-bottom: 28px;
     padding: 13px 5%;
-    margin-bottom: 25px;
   }
 
   .form__button,

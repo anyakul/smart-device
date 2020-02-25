@@ -32,7 +32,6 @@
   max-height: 100%;
   width: 27%;
   background-size: 100%;
-  background-color: transparent;
 
   &--parts::after {
     @include picture-after;
@@ -98,7 +97,6 @@
   z-index: 10;
   width: 50%;
   font-family: $robotocondensedbold;
-  font-weight: normal;
 }
 
 @media (max-width: $tablet-width) {
@@ -107,14 +105,9 @@
     padding-bottom: 35px;
   }
 
-  .services__list {
-    @include flex-column;
-  }
-
   .services__item {
-    width: 93%;
+    width: 100%;
     min-height: 218px;
-    margin-right: 30px;
     padding-top: 38px;
     padding-left: 6%;
     margin-bottom: 44px;
@@ -163,7 +156,6 @@
   .services__item {
     width: 93%;
     min-height: 240px;
-    margin-right: 30px;
     padding-top: 20px;
     padding-left: 13%;
     margin-bottom: 25px;

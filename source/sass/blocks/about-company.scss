@@ -45,25 +45,22 @@
 
 @media (max-width: $tablet-width) {
   .about-company {
-    @include main-text;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 
   .about-company__icon {
     width: 137px;
   }
-  
+
   .about-company__header {
     margin-bottom: 24px;
   }
-
 
   .about-company__explanation {
     width: 74%;
   }
 
   .about-company__text {
-    @include main-text;
     margin-bottom: 22px;
   }
   
