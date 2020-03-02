@@ -31,10 +31,11 @@
 }
 
 @mixin main-header {
-  font-size: 2.25rem;
-  font-family: $robotocondensedbold;
+  font-size: 2.3rem;
+  font-family: $robotocondensedregular;
   color: $black-color;
   line-height: 51px;
+  
 
   @media (max-width: $tablet-width) {
     font-size: 2rem;
@@ -47,7 +48,7 @@
 }
 
 @mixin main-text {
-  font-size: 16px;
+  font-size: 1rem;
   color: $black-color;
   font-family: $pt-mono-regular-font;
   line-height: 22px;
@@ -147,6 +148,7 @@
 }
 
 @mixin black-link {
+  text-decoration: none;
   &:hover {
     color: #8a8a8a;
   }
@@ -177,7 +179,7 @@
 }
 
 @mixin container {
-  width: 83%;
+  width: 82%;
   margin: 0 auto;
 
   @media (max-width: $tablet-width) {
@@ -211,7 +213,6 @@
   font-size: 0.9375rem;
   color: $header-bg-color;
   opacity: 0.5;
-  letter-spacing: 0.03em;
   text-decoration: none;
   line-height: 25px;
 }
@@ -313,8 +314,8 @@
 @mixin text-area {
   color: $black-color;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 90%;
-  padding: 15px 5%;
+  width: 93%;
+  padding: 10px 3%;
   border: none;
   resize: none;
   outline: none;
@@ -333,8 +334,10 @@
 
   @media (max-width: $tablet-width) {
     height: 135px;
-    padding: 13px 4%;
-    width: 100%;
+    padding: 15px 3%;
+ //   padding-left: 3%;
+    //padding-left: 15px;
+    width: 93%;
   }
 
   @media (max-width: $mobile-width) {
@@ -350,8 +353,8 @@
 @mixin checkbox {
   content: "";
   position: absolute;
-  top: 0;
-  left: -35px;
+  top: 2px;
+  left: -36px;
   width: 23px;
   height: 23px;
 }

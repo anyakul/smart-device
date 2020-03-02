@@ -1,6 +1,6 @@
 .stay {
   position: relative;
-  padding-bottom: 110px;
+  padding-bottom: 122px;
   background-color: $blue-color;
 }
 
@@ -49,7 +49,7 @@
 
 .stay__text {
   @include main-text;
-  margin-bottom: 49px;
+  margin-bottom: 54px;
   color: $white-color;
 }
 
@@ -73,7 +73,7 @@
 
   .stay__header {
     line-height: 43px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .stay__text {

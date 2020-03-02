@@ -1,6 +1,6 @@
 .about-company {
   @include page-size;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .about-company__wrapper {
@@ -35,12 +35,12 @@
 .about-company__button {
   @include button-text;
   @include blue-border-button;
-  padding: 15px 50px;
+  padding: 13px 50px;
 }
 
 .about-company__image {
   height: 100%;
-  width: 120px;
+  width: 117px;
   margin-right: 43px;
 }
 
@@ -56,13 +56,17 @@
   .about-company__header {
     margin-bottom: 24px;
   }
+  
+  .about-company__texts {
+    margin-bottom: 43px;
+  }
 
   .about-company__explanation {
     width: 74%;
   }
 
   .about-company__text {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
   
   .about-company__image {
@@ -100,5 +104,9 @@
 
   .about-company__text:last-child {
     margin-bottom: 0;
+  }
+  
+  .about-company__button {
+    padding: 14px 49px;
   }
 }

@@ -1,9 +1,9 @@
 .footer-logo {
   @include flex-row;
   justify-content: space-between;
-  margin-bottom: 55px;
-  padding-top: 5px;
+  margin-bottom: 45px;
   cursor: pointer;
+  min-width: 217px;
 }
 
 .footer-logo__icon {
@@ -14,11 +14,14 @@
 .footer-logo__text {
   @include flex-column;
   margin-left: 25px;
+  margin-bottom: 10px;
 }
 
 .footer-logo__header {
   @include logo-header;
   color: $footer-logo-color;
+  font-family: $robotocondensedbold;
+  margin-top: 9px;
 }
 
 .footer-logo__add {
@@ -29,6 +32,10 @@
   .footer-logo {
     margin-bottom: 0;
   }
+  
+  .footer-logo__text {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -36,6 +43,12 @@
     width: 212px;
     margin: 0 auto;
     margin-bottom: 0;
+    align-items: center;
+  }
+
+  .footer-logo__text {
+    @include flex-column;
+    margin-left: 0;
   }
 
   .footer-logo__icon {

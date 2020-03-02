@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 62px;
+  padding-top: 60px;
   background-color: $footer-bg-color;
 }
 
@@ -34,7 +34,7 @@
 
   .footer__left {
     border-bottom: 1px solid #626962;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .footer__left-wrapper {
@@ -54,13 +54,13 @@
 
   .footer__about {
     @include page-size;
-    padding-top: 32px;
+    padding-top: 37px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .footer {
-    padding-top: 48px;
+    padding-top: 45px;
   }
 
   .footer__up {

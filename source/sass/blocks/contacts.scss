@@ -2,14 +2,15 @@
   @include cancel;
   @include flex-row;
   flex-wrap: wrap;
-  min-width: 47%;
+  min-width: 46%;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 4px;
+  margin-right: 15px;
 }
 
 .contacts__item {
   margin-right: 30px;
-  margin-top: -6px;
+  margin-top: -10px;
   font-family: $pt-mono-regular-font;
 
   &:last-child {
@@ -28,7 +29,7 @@
 }
 
 .contacts__item:first-child {
-  margin-right: 75px;
+  margin-right: 70px;
 }
 
 .contacts__item a {
@@ -46,14 +47,16 @@
 
 .contacts__button {
   @include white-button;
-  margin-top: -3px;
-  padding: 12px 27px;
+  margin-top: 5px;
+  padding: 12px 26px;
   font-family: $robotocondensedbold;
+  
 }
 
 @media (max-width: $tablet-width) {
   .contacts {
     min-width: 82px;
+    margin-right: 0;
   }
 
   .contacts__item {
